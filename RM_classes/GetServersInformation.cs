@@ -19,17 +19,35 @@ namespace RMLauncher.RM_classes
 
         IServerQuery serverQuery;
 
-        string serverInfo;
-        string serverOnline;
-        int serverPing;
+        public int serversAllOnline = 0;
 
-        public void GetServer(int serverID)
+        public string GetOnlineServer(int serverID)
         {
-            if (serverID != 0 && serverID < 5)
-                GetInfromationAboutServer(serverID);
+            
+
+            switch (serverID)
+            {
+                case 1: 
+                    serverQuery = new ServerQuery(ip_namalsk); 
+                    break;
+                case 2: 
+                    serverQuery = new ServerQuery(ip_epoch);  
+                    break;
+                case 3: 
+                    serverQuery = new ServerQuery(ip_cherno); 
+                    break;
+                case 4: 
+                    serverQuery = new ServerQuery(ip_cherno2); 
+                    break;
+                default: break;
+            }
+
+            SteamQueryNet.Models.ServerInfo serverInfo = serverQuery.GetServerInfo();
+            OnlineAll(serverInfo.Players);
+            return $"{serverInfo.Players}/{serverInfo.MaxPlayers}";
         }
 
-        public string GetInfromationAboutServer(int serverID)
+        public int GetPingServer(int serverID)
         {
             switch (serverID)
             {
@@ -42,7 +60,12 @@ namespace RMLauncher.RM_classes
 
             SteamQueryNet.Models.ServerInfo serverInfo = serverQuery.GetServerInfo();
 
-            return $"Онлайн: {serverInfo.Players}/{serverInfo.MaxPlayers}";
+            return Convert.ToInt32(serverInfo.Ping);
+        }
+
+        public int OnlineAll(int tempOnline)
+        {
+            return serversAllOnline += tempOnline;
         }
     }
 }

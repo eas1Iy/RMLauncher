@@ -74,9 +74,11 @@ namespace RMLauncher.RM_Forms
             this.metroLabel2.Location = new System.Drawing.Point(23, 298);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(239, 19);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroLabel2.TabIndex = 0;
             this.metroLabel2.Text = "Загрузка...";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroProgressSpinner1
             // 
@@ -84,7 +86,9 @@ namespace RMLauncher.RM_Forms
             this.metroProgressSpinner1.Maximum = 100;
             this.metroProgressSpinner1.Name = "metroProgressSpinner1";
             this.metroProgressSpinner1.Size = new System.Drawing.Size(144, 136);
+            this.metroProgressSpinner1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroProgressSpinner1.TabIndex = 1;
+            this.metroProgressSpinner1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroProgressSpinner1.UseSelectable = true;
             // 
             // RMStart

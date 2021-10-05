@@ -29,10 +29,5 @@ namespace RMLauncher.RM_Forms
         {
             
         }
-
-        bool CheckStartAvailable()
-        {
-            return true;
-        }
     }
 }

@@ -101,6 +101,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RM_classes\CheckAvailable.cs" />
+    <Compile Include="RM_classes\CheckOthersStats.cs" />
+    <Compile Include="RM_classes\DayZLaunch.cs" />
+    <Compile Include="RM_classes\DayZPath.cs" />
     <Compile Include="RM_classes\GetInternetConnection.cs" />
     <Compile Include="RM_classes\GetServersInformation.cs" />
     <Compile Include="RM_Forms\RMStart.cs">
@@ -133,6 +137,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoWhite.ico" />
+    <None Include="Resources\namalsk.png" />
+    <None Include="Resources\cherno.png" />
+    <None Include="Resources\livonia.png" />
     <Content Include="steam_api64.dll" />
     <None Include="Resources\logoWhite.png" />
   </ItemGroup>
