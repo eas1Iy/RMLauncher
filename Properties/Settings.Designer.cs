@@ -34,5 +34,41 @@ namespace RMLauncher.Properties {
                 this["Language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string nickname {
+            get {
+                return ((string)(this["nickname"]));
+            }
+            set {
+                this["nickname"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string dayzPath {
+            get {
+                return ((string)(this["dayzPath"]));
+            }
+            set {
+                this["dayzPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string steamPath {
+            get {
+                return ((string)(this["steamPath"]));
+            }
+            set {
+                this["steamPath"] = value;
+            }
+        }
     }
 }

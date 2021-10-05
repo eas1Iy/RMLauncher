@@ -165,7 +165,7 @@ namespace RMLauncher
             this.tab.Controls.Add(this.page_about);
             this.tab.Location = new System.Drawing.Point(4, 63);
             this.tab.Name = "tab";
-            this.tab.SelectedIndex = 0;
+            this.tab.SelectedIndex = 1;
             this.tab.Size = new System.Drawing.Size(777, 372);
             this.tab.Style = MetroFramework.MetroColorStyle.Red;
             this.tab.TabIndex = 0;
@@ -1305,6 +1305,7 @@ namespace RMLauncher
             this.Text = "RMLauncher";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RMForm_FormClosing);
             this.Load += new System.EventHandler(this.RMForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
             this.tab.ResumeLayout(false);

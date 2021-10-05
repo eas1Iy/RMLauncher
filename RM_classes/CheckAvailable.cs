@@ -8,16 +8,16 @@ namespace RMLauncher.RM_classes
 {
     class CheckAvailable
     {
-        bool CheckStartAvailable()
+        public static bool CheckStartAvailable()
         {
             return true;
         }
-        
-        //
 
-        bool CheckConnectionAvailable()
+        public static bool CheckConnectionAvailable()
         {
-            return true;
+            if (GetInternetConnection.CheckConnection())
+                return true;
+            else return false;
         }
     }
 }

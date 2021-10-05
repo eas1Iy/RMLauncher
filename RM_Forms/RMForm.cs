@@ -125,10 +125,30 @@ namespace RMLauncher
             updateOnline_Tick(sender, e);
             updatePing_Tick(sender, e);
         }
-        void updateStats_Tick(object sender, EventArgs e)
+        async void updateStats_Tick(object sender, EventArgs e)
         {
             if (CheckOthersStats.DayZ()) label_statusDayZ.Text = "Active"; else label_statusDayZ.Text = "Offline";
-            if (CheckOthersStats.Steam()) label_statusSteam.Text = "Active"; else label_statusSteam.Text = "Offline";
+            if (CheckOthersStats.Steam()) label_statusSteam.Text = "Active";
+            else
+            {
+                label_statusSteam.Text = "Offline";
+                steamOff:
+                if(CheckOthersStats.Steam()) { }
+                else
+                {
+                    if (MetroMessageBox.Show(this, "Please start STEAM!", "Steam error", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.No) Application.Exit();
+                    else
+                    {
+                        await Task.Delay(1000);
+                        goto steamOff;
+                    }
+                }
+            }
+        }
+
+        void RMForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
         #endregion
 

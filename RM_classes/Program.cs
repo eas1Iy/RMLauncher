@@ -17,7 +17,7 @@ namespace RMLauncher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RMForm());
+            Application.Run(new RMStart());
         }
     }
 }

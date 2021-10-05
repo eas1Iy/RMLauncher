@@ -107,6 +107,7 @@
     <Compile Include="RM_classes\DayZPath.cs" />
     <Compile Include="RM_classes\GetInternetConnection.cs" />
     <Compile Include="RM_classes\GetServersInformation.cs" />
+    <Compile Include="RM_classes\ProcessCustom.cs" />
     <Compile Include="RM_Forms\RMStart.cs">
       <SubType>Form</SubType>
     </Compile>
