@@ -63,9 +63,9 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cherno {
+        internal static System.Drawing.Bitmap black_cherno {
             get {
-                object obj = ResourceManager.GetObject("cherno", resourceCulture);
+                object obj = ResourceManager.GetObject("black_cherno", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap livonia {
+        internal static System.Drawing.Bitmap black_namalsk {
             get {
-                object obj = ResourceManager.GetObject("livonia", resourceCulture);
+                object obj = ResourceManager.GetObject("black_namalsk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logoWhite {
+        internal static System.Drawing.Bitmap green_cherno {
             get {
-                object obj = ResourceManager.GetObject("logoWhite", resourceCulture);
+                object obj = ResourceManager.GetObject("green_cherno", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,29 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap namalsk {
+        internal static System.Drawing.Bitmap green_namalsk {
             get {
-                object obj = ResourceManager.GetObject("namalsk", resourceCulture);
+                object obj = ResourceManager.GetObject("green_namalsk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_cherno {
+            get {
+                object obj = ResourceManager.GetObject("red_cherno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_namalsk {
+            get {
+                object obj = ResourceManager.GetObject("red_namalsk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

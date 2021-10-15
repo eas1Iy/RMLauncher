@@ -1,6 +1,7 @@
 ﻿using MetroFramework;
 using RMLauncher.Properties;
 using RMLauncher.RM_classes;
+using RMLauncher.RM_classes.DayZ;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,7 @@ namespace RMLauncher
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
             InitializeComponent();
+            Themes();
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US") ru = false;
             else ru = true;
         }
@@ -48,8 +50,8 @@ namespace RMLauncher
             //
             label_namalsk_map.Text = "namalsk";
             label_livonia_map.Text = "livonia";
-            label_cherno1_map.Text = "chernorus";
-            label_cherno2_map.Text = "chernorus";
+            label_cherno1_map.Text = "chernarus";
+            label_cherno2_map.Text = "chernarus";
             //
             updateStats_Tick(null, null);
             updateOnline_Tick(null, null);
@@ -60,7 +62,7 @@ namespace RMLauncher
         #region Главная
         void button_connect_namalsk_Click(object sender, EventArgs e)
         {
-
+            GameStart(1);
         }
 
         void button_connect_livonia_Click(object sender, EventArgs e)
@@ -70,12 +72,19 @@ namespace RMLauncher
 
         void button_connect_cherno1_Click(object sender, EventArgs e)
         {
-
+            GameStart(2);
         }
 
         void button_connect_cherno2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public bool GameStart(byte serverID)
+        {
+
+
+            return true;
         }
         #endregion
 
@@ -101,13 +110,72 @@ namespace RMLauncher
         #endregion
 
         #region Остальное
+        void ComboBox_Style_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (ComboBox_Style.SelectedIndex)
+            {
+                case 0: Settings.Default["style"] = "Red"; break;
+                case 1: Settings.Default["style"] = "Green"; break;
+                case 2: Settings.Default["style"] = "Black"; break;
+                default: break;
+            }
+            SaveSettings();
+        }
+
+        void Themes()
+        {
+            MetroColorStyle metroColorStyle = themeChanger.StyleChanger();
+
+            changeImagesTheme(metroColorStyle);
+
+            tab.Style = metroColorStyle;
+            Tile_servers.Style = metroColorStyle;
+            Tile_stats.Style = metroColorStyle;
+            Tile_server1.Style = metroColorStyle;
+            Tile_server2.Style = metroColorStyle;
+            Tile_server3.Style = metroColorStyle;
+            Tile_server4.Style = metroColorStyle;
+
+            CheckBox_windowmode.Style = metroColorStyle;
+            CheckBox_priority.Style = metroColorStyle;
+            CheckBox_batteye.Style = metroColorStyle;
+            CheckBox_updates.Style = metroColorStyle;
+            CheckBox_statistics.Style = metroColorStyle;
+            CheckBox_discord.Style = metroColorStyle;
+
+            ComboBox_Style.Style = metroColorStyle;
+            StyleManager.Style = metroColorStyle;
+            this.Style = metroColorStyle;
+        }
+
+        void changeImagesTheme(MetroColorStyle metroColorStyle)
+        {
+            if (metroColorStyle == MetroColorStyle.Green)
+            {
+                pictureBox_namalsk.Image = Resources.green_namalsk;
+                pictureBox_cherno1.Image = Resources.green_cherno;
+                pictureBox_cherno2.Image = Resources.green_cherno;
+            }
+            else if (metroColorStyle == MetroColorStyle.Black)
+            {;
+                pictureBox_namalsk.Image = Resources.black_namalsk;
+                pictureBox_cherno1.Image = Resources.black_cherno;
+                pictureBox_cherno2.Image = Resources.black_cherno;
+            }
+            else
+            {
+                pictureBox_namalsk.Image = Resources.red_namalsk;
+                pictureBox_cherno1.Image = Resources.red_cherno;
+                pictureBox_cherno2.Image = Resources.red_cherno;
+            }
+        }
         void updateOnline_Tick(object sender, EventArgs e)
         {
             getInfo.serversAllOnline = 0;
             label_namalsk_online.Text = getInfo.GetOnlineServer(1);
-            label_livonia_online.Text = getInfo.GetOnlineServer(2);
+            //label_livonia_online.Text = getInfo.GetOnlineServer(2);
             label_cherno1_online.Text = getInfo.GetOnlineServer(3);
-            label_cherno2_online.Text = getInfo.GetOnlineServer(4);
+            //label_cherno2_online.Text = getInfo.GetOnlineServer(4);
             //
             label_statusOnline.Text = Convert.ToString(getInfo.OnlineAll(0));
         }
@@ -115,9 +183,9 @@ namespace RMLauncher
         void updatePing_Tick(object sender, EventArgs e)
         {
             label_namalsk_ping.Text = Convert.ToString(getInfo.GetPingServer(1));
-            label_livonia_ping.Text = Convert.ToString(getInfo.GetPingServer(2));
+            //label_livonia_ping.Text = Convert.ToString(getInfo.GetPingServer(2));
             label_cherno1_ping.Text = Convert.ToString(getInfo.GetPingServer(3));
-            label_cherno2_ping.Text = Convert.ToString(getInfo.GetPingServer(4));
+            //label_cherno2_ping.Text = Convert.ToString(getInfo.GetPingServer(4));
         }
 
         void button_updateStat_Click(object sender, EventArgs e)
@@ -148,9 +216,44 @@ namespace RMLauncher
 
         void RMForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SaveSettings();
             Application.Exit();
         }
-        #endregion
 
+        void SaveSettings()
+        {
+            Settings.Default.Save();
+        }
+
+        void button_changeLanguage_Click(object sender, EventArgs e)
+        {
+            if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
+            {
+                Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ru-RU");
+                Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("ru-RU");
+                Properties.Settings.Default.Language = "ru-RU";
+                Properties.Settings.Default.Save();
+                Application.Restart();
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+                Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+                Properties.Settings.Default.Language = "en-US";
+                Properties.Settings.Default.Save();
+                Application.Restart();
+            }
+        }
+        void button_checkMods_Click(object sender, EventArgs e)
+        {
+            if (DayZCheckMods.IsInstalledCheck(1))
+                MetroMessageBox.Show(this, "Модификации сервера: Namalsk\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else MetroMessageBox.Show(this, "Модификации сервера: Namalsk\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            if (DayZCheckMods.IsInstalledCheck(2))
+                MetroMessageBox.Show(this, "Модификации серверов: Chernarus и Livonia\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else MetroMessageBox.Show(this, "Модификации сервера: Chernarus и Livonia\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        #endregion
     }
 }

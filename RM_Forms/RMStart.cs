@@ -1,4 +1,5 @@
 ﻿using MetroFramework;
+using RMLauncher.Properties;
 using RMLauncher.RM_classes;
 using SteamQueryNet;
 using SteamQueryNet.Interfaces;
@@ -13,8 +14,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,9 +25,16 @@ namespace RMLauncher.RM_Forms
 {
     public partial class RMStart : MetroFramework.Forms.MetroForm
     {
+
+        public bool ru;
         public RMStart()
         {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
             InitializeComponent();
+            if (Thread.CurrentThread.CurrentUICulture.Name == "en-US") ru = false;
+            else ru = true;
+            Themes();
         }
 
         async void RMStart_Load(object sender, EventArgs e)
@@ -65,6 +75,15 @@ namespace RMLauncher.RM_Forms
             if (CheckOthersStats.Steam() && !CheckOthersStats.DayZ()) // CheckAvailable.CheckConnectionAvailable()
                 return true;
             else return false;
+        }
+
+        void Themes()
+        {
+            MetroColorStyle metroColorStyle = themeChanger.StyleChanger();
+
+            StyleManager.Style = metroColorStyle;
+            Progress.Style = metroColorStyle;
+            this.Style = metroColorStyle;
         }
     }
 }

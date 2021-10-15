@@ -31,9 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logoWhite.ico</ApplicationIcon>
+    <ApplicationIcon>RMIcon_Red.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Facepunch.Steamworks.Win64, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -101,13 +102,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RM_classes\CheckAvailable.cs" />
-    <Compile Include="RM_classes\CheckOthersStats.cs" />
-    <Compile Include="RM_classes\DayZLaunch.cs" />
-    <Compile Include="RM_classes\DayZPath.cs" />
-    <Compile Include="RM_classes\GetInternetConnection.cs" />
-    <Compile Include="RM_classes\GetServersInformation.cs" />
-    <Compile Include="RM_classes\ProcessCustom.cs" />
+    <Compile Include="RM_classes\Client\CheckAvailable.cs" />
+    <Compile Include="RM_classes\Client\CheckOthersStats.cs" />
+    <Compile Include="RM_classes\DayZ\DayZCheckMods.cs" />
+    <Compile Include="RM_classes\DayZ\DayZLaunch.cs" />
+    <Compile Include="RM_classes\DayZ\DayZPath.cs" />
+    <Compile Include="RM_classes\Client\GetInternetConnection.cs" />
+    <Compile Include="RM_classes\Client\GetServersInformation.cs" />
+    <Compile Include="RM_classes\Client\ProcessCustom.cs" />
+    <Compile Include="RM_classes\Client\themeChanger.cs" />
+    <Compile Include="RM_Forms\RMConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RM_Forms\RMConnect.Designer.cs">
+      <DependentUpon>RMConnect.cs</DependentUpon>
+    </Compile>
     <Compile Include="RM_Forms\RMStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +131,21 @@
     </Compile>
     <Compile Include="RM_classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RM_Forms\RMConnect.resx">
+      <DependentUpon>RMConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMForm.en.resx">
+      <DependentUpon>RMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMForm.ru.resx">
+      <DependentUpon>RMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMStart.am-ET.resx">
+      <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMStart.en.resx">
+      <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RM_Forms\RMStart.resx">
       <DependentUpon>RMStart.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +162,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RM_Forms\RMStart.ru.resx">
+      <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMStart.sq.resx">
+      <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RMStart.uz.resx">
+      <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -154,10 +187,19 @@
     <None Include="RM_others\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logoWhite.ico" />
     <None Include="Resources\namalsk.png" />
     <None Include="Resources\cherno.png" />
     <None Include="Resources\livonia.png" />
+    <None Include="Resources\KK22.png" />
+    <None Include="Resources\RMlogo_1.png" />
+    <None Include="Resources\red_namalsk.png" />
+    <None Include="Resources\red_cherno.png" />
+    <None Include="Resources\black_cherno.png" />
+    <None Include="Resources\black_namalsk.png" />
+    <None Include="Resources\green_cherno.png" />
+    <None Include="Resources\green_namalsk.png" />
+    <Content Include="RMIcon_Red.ico" />
+    <Content Include="RMIcon_White.ico" />
     <Content Include="steam_api64.dll" />
     <None Include="Resources\logoWhite.png" />
   </ItemGroup>

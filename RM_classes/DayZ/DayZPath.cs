@@ -11,7 +11,7 @@ namespace RMLauncher.RM_classes
 {
     class DayZPath
     {
-		public string Locate()
+		public static string Locate()
 		{
 			string result;
 			try

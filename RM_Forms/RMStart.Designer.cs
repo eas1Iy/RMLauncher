@@ -36,26 +36,20 @@ namespace RMLauncher.RM_Forms
             this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.StyleExtender = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroProgressSpinner1 = new MetroFramework.Controls.MetroProgressSpinner();
+            this.Progress = new MetroFramework.Controls.MetroProgressSpinner();
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.metroButton1, "metroButton1");
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 0;
             this.metroButton1.UseSelectable = true;
             // 
             // metroLabel1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.metroLabel1, "metroLabel1");
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(100, 23);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "dasdsad";
             // 
             // StyleManager
             // 
@@ -69,43 +63,32 @@ namespace RMLauncher.RM_Forms
             // 
             // metroLabel2
             // 
-            this.metroLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroLabel2.Location = new System.Drawing.Point(23, 298);
+            resources.ApplyResources(this.metroLabel2, "metroLabel2");
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(239, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel2.TabIndex = 0;
-            this.metroLabel2.Text = "Загрузка...";
-            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // metroProgressSpinner1
+            // Progress
             // 
-            this.metroProgressSpinner1.Location = new System.Drawing.Point(69, 93);
-            this.metroProgressSpinner1.Maximum = 100;
-            this.metroProgressSpinner1.Name = "metroProgressSpinner1";
-            this.metroProgressSpinner1.Size = new System.Drawing.Size(144, 136);
-            this.metroProgressSpinner1.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroProgressSpinner1.TabIndex = 1;
-            this.metroProgressSpinner1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroProgressSpinner1.UseSelectable = true;
+            resources.ApplyResources(this.Progress, "Progress");
+            this.Progress.Maximum = 100;
+            this.Progress.Name = "Progress";
+            this.Progress.Style = MetroFramework.MetroColorStyle.Red;
+            this.Progress.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Progress.UseSelectable = true;
             // 
             // RMStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 336);
-            this.Controls.Add(this.metroProgressSpinner1);
+            this.Controls.Add(this.Progress);
             this.Controls.Add(this.metroLabel2);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RMStart";
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.Style = MetroFramework.MetroColorStyle.Red;
-            this.Text = "RM Loader";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.RMStart_Load);
@@ -121,6 +104,6 @@ namespace RMLauncher.RM_Forms
         private MetroFramework.Components.MetroStyleManager StyleManager;
         private MetroFramework.Components.MetroStyleExtender StyleExtender;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner1;
+        private MetroFramework.Controls.MetroProgressSpinner Progress;
     }
 }

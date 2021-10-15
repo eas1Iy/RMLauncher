@@ -117,19 +117,311 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;metroLabel2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="page_main.Text" xml:space="preserve">
+    <value>Main</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Progress.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;metroButton1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="metroLabel30.Text" xml:space="preserve">
+    <value>View:</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="metroLabel34.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel35.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel36.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_cherno2.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="metroLabel22.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="metroLabel26.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel27.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel28.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_cherno1.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="metroLabel14.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="metroLabel18.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel19.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel20.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_livonia.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Tile_servers.Text" xml:space="preserve">
+    <value>Servers</value>
+  </data>
+  <data name="metroLabel12.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="pictureBox_namalsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="metroLabel7.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel6.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel5.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_namalsk.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="page_settigns.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="button_aboutDEV.Text" xml:space="preserve">
+    <value>About the developer (launcher)</value>
+  </data>
+  <data name="button_aboutRM.Text" xml:space="preserve">
+    <value>About game servers</value>
+  </data>
+  <data name="button_appRestart.Text" xml:space="preserve">
+    <value>Forced reboot</value>
+  </data>
+  <data name="ComboBox_Style.Items" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="ComboBox_Style.Items1" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="ComboBox_Style.Items2" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="CheckBox_discord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 15</value>
+  </data>
+  <data name="CheckBox_discord.Text" xml:space="preserve">
+    <value>Automatic statistics update</value>
+  </data>
+  <data name="CheckBox_statistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 15</value>
+  </data>
+  <data name="CheckBox_statistics.Text" xml:space="preserve">
+    <value>Collecting anonymous statistics</value>
+  </data>
+  <data name="CheckBox_updates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 15</value>
+  </data>
+  <data name="CheckBox_updates.Text" xml:space="preserve">
+    <value>Auto-updates</value>
+  </data>
+  <data name="metroLabel39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="metroLabel39.Text" xml:space="preserve">
+    <value>Launcher settings</value>
+  </data>
+  <data name="CheckBox_batteye.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 15</value>
+  </data>
+  <data name="CheckBox_batteye.Text" xml:space="preserve">
+    <value>Skip anti-cheat (will not log into the server)</value>
+  </data>
+  <data name="CheckBox_priority.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 15</value>
+  </data>
+  <data name="CheckBox_priority.Text" xml:space="preserve">
+    <value>High priority</value>
+  </data>
+  <data name="CheckBox_windowmode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 15</value>
+  </data>
+  <data name="CheckBox_windowmode.Text" xml:space="preserve">
+    <value>Window mode</value>
+  </data>
+  <data name="metroLabel38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 19</value>
+  </data>
+  <data name="metroLabel38.Text" xml:space="preserve">
+    <value>Game settings</value>
+  </data>
+  <data name="page_about.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="label_info.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label_info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 313</value>
+  </data>
+  <data name="label_info.Text" xml:space="preserve">
+    <value>More information in discord.</value>
+  </data>
+  <data name="metroLabel3.Text" xml:space="preserve">
+    <value>All online</value>
+  </data>
+  <data name="Tile_stats.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="button_updateStat.Text" xml:space="preserve">
+    <value>Update stats</value>
+  </data>
+  <data name="button_checkMods.Text" xml:space="preserve">
+    <value>Check modes</value>
+  </data>
+  <data name="button_changeLanguage.Text" xml:space="preserve">
+    <value>Сменить язык</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -387,116 +679,4 @@
         AAD//8AH//8AAP///////wAA////////AAA=
 </value>
   </data>
-  <data name="&gt;&gt;Progress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="metroButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;metroButton1.Name" xml:space="preserve">
-    <value>metroButton1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>RMStart</value>
-  </data>
-  <data name="Progress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 93</value>
-  </data>
-  <data name="&gt;&gt;StyleManager.Type" xml:space="preserve">
-    <value>MetroFramework.Components.MetroStyleManager, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="metroLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 19</value>
-  </data>
-  <data name="&gt;&gt;Progress.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="metroLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 298</value>
-  </data>
-  <data name="metroLabel1.Text" xml:space="preserve">
-    <value>dasdsad</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>285, 336</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Progress.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroProgressSpinner, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="metroButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;StyleExtender.Type" xml:space="preserve">
-    <value>MetroFramework.Components.MetroStyleExtender, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;StyleExtender.Name" xml:space="preserve">
-    <value>StyleExtender</value>
-  </data>
-  <data name="metroButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Name" xml:space="preserve">
-    <value>metroLabel2</value>
-  </data>
-  <data name="metroLabel2.Text" xml:space="preserve">
-    <value>Загрузка...</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="metroLabel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="metroLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Progress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 136</value>
-  </data>
-  <data name="metroLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;Progress.Name" xml:space="preserve">
-    <value>Progress</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>RMLoader</value>
-  </data>
-  <data name="&gt;&gt;StyleManager.Name" xml:space="preserve">
-    <value>StyleManager</value>
-  </data>
-  <data name="metroLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="StyleExtender.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 19</value>
-  </metadata>
-  <metadata name="StyleManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

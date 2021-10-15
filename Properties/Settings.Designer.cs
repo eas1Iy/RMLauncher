@@ -70,5 +70,17 @@ namespace RMLauncher.Properties {
                 this["steamPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string style {
+            get {
+                return ((string)(this["style"]));
+            }
+            set {
+                this["style"] = value;
+            }
+        }
     }
 }
