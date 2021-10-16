@@ -12,10 +12,10 @@ namespace RMLauncher.RM_classes
 {
     class GetServersInformation
     {
-        public string ip_namalsk = "185.189.255.184:27016"; // 1
-        public string ip_epoch = "185.189.255.184:27024"; // 2
-        public string ip_cherno = "185.189.255.184:27017"; // 3 (1pp)
-        public string ip_cherno2 = "185.189.255.184:27023"; // 4 (3pp)
+        public static string ip_namalsk = "185.189.255.184:27016"; // 1
+        public static string ip_epoch = "185.189.255.184:27024"; // 2
+        public static string ip_cherno = "185.189.255.184:27017"; // 3 (1pp)
+        public static string ip_cherno2 = "185.189.255.184:27023"; // 4 (3pp)
 
         IServerQuery serverQuery;
 

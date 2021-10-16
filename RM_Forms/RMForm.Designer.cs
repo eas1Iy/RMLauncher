@@ -43,6 +43,7 @@ namespace RMLauncher
             this.label_cherno2_ping = new MetroFramework.Controls.MetroLabel();
             this.label_cherno2_online = new MetroFramework.Controls.MetroLabel();
             this.label_cherno2_map = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_cherno2 = new System.Windows.Forms.PictureBox();
             this.metroLabel34 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel35 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
@@ -54,6 +55,7 @@ namespace RMLauncher
             this.label_cherno1_ping = new MetroFramework.Controls.MetroLabel();
             this.label_cherno1_online = new MetroFramework.Controls.MetroLabel();
             this.label_cherno1_map = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_cherno1 = new System.Windows.Forms.PictureBox();
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
@@ -65,6 +67,7 @@ namespace RMLauncher
             this.label_livonia_ping = new MetroFramework.Controls.MetroLabel();
             this.label_livonia_online = new MetroFramework.Controls.MetroLabel();
             this.label_livonia_map = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
@@ -77,6 +80,7 @@ namespace RMLauncher
             this.label_namalsk_ping = new MetroFramework.Controls.MetroLabel();
             this.label_namalsk_online = new MetroFramework.Controls.MetroLabel();
             this.label_namalsk_map = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox_namalsk = new System.Windows.Forms.PictureBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
@@ -87,8 +91,8 @@ namespace RMLauncher
             this.button_aboutRM = new MetroFramework.Controls.MetroButton();
             this.button_appRestart = new MetroFramework.Controls.MetroButton();
             this.ComboBox_Style = new MetroFramework.Controls.MetroComboBox();
-            this.CheckBox_discord = new MetroFramework.Controls.MetroCheckBox();
-            this.CheckBox_statistics = new MetroFramework.Controls.MetroCheckBox();
+            this.CheckBox_stats = new MetroFramework.Controls.MetroCheckBox();
+            this.CheckBox_shutdown = new MetroFramework.Controls.MetroCheckBox();
             this.CheckBox_updates = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
             this.CheckBox_batteye = new MetroFramework.Controls.MetroCheckBox();
@@ -115,27 +119,25 @@ namespace RMLauncher
             this.updateOnline = new System.Windows.Forms.Timer(this.components);
             this.updatePing = new System.Windows.Forms.Timer(this.components);
             this.updateStats = new System.Windows.Forms.Timer(this.components);
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBox_cherno2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_cherno1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_namalsk = new System.Windows.Forms.PictureBox();
+            this.TextBox_username = new MetroFramework.Controls.MetroTextBox();
+            this.tile_beta = new MetroFramework.Controls.MetroTile();
+            this.ToolTip_help = new MetroFramework.Drawing.Html.HtmlToolTip();
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
             this.tab.SuspendLayout();
             this.page_main.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.metroPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).BeginInit();
             this.metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).BeginInit();
             this.metroPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).BeginInit();
             this.page_settigns.SuspendLayout();
             this.page_about.SuspendLayout();
             this.panel_info.SuspendLayout();
             this.panel_right.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -161,7 +163,7 @@ namespace RMLauncher
             this.tab.Controls.Add(this.page_settigns);
             this.tab.Controls.Add(this.page_about);
             this.tab.Name = "tab";
-            this.tab.SelectedIndex = 0;
+            this.tab.SelectedIndex = 1;
             this.tab.Style = MetroFramework.MetroColorStyle.Red;
             this.tab.TabStop = false;
             this.tab.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -252,6 +254,13 @@ namespace RMLauncher
             this.label_cherno2_map.Name = "label_cherno2_map";
             this.label_cherno2_map.Style = MetroFramework.MetroColorStyle.Red;
             this.label_cherno2_map.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // pictureBox_cherno2
+            // 
+            resources.ApplyResources(this.pictureBox_cherno2, "pictureBox_cherno2");
+            this.pictureBox_cherno2.Image = global::RMLauncher.Properties.Resources.red_cherno;
+            this.pictureBox_cherno2.Name = "pictureBox_cherno2";
+            this.pictureBox_cherno2.TabStop = false;
             // 
             // metroLabel34
             // 
@@ -351,6 +360,13 @@ namespace RMLauncher
             this.label_cherno1_map.Style = MetroFramework.MetroColorStyle.Red;
             this.label_cherno1_map.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // pictureBox_cherno1
+            // 
+            resources.ApplyResources(this.pictureBox_cherno1, "pictureBox_cherno1");
+            this.pictureBox_cherno1.Image = global::RMLauncher.Properties.Resources.red_cherno;
+            this.pictureBox_cherno1.Name = "pictureBox_cherno1";
+            this.pictureBox_cherno1.TabStop = false;
+            // 
             // metroLabel26
             // 
             resources.ApplyResources(this.metroLabel26, "metroLabel26");
@@ -448,6 +464,12 @@ namespace RMLauncher
             this.label_livonia_map.Name = "label_livonia_map";
             this.label_livonia_map.Style = MetroFramework.MetroColorStyle.Red;
             this.label_livonia_map.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // metroLabel18
             // 
@@ -556,6 +578,13 @@ namespace RMLauncher
             this.label_namalsk_map.Style = MetroFramework.MetroColorStyle.Red;
             this.label_namalsk_map.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // pictureBox_namalsk
+            // 
+            resources.ApplyResources(this.pictureBox_namalsk, "pictureBox_namalsk");
+            this.pictureBox_namalsk.Image = global::RMLauncher.Properties.Resources.red_namalsk;
+            this.pictureBox_namalsk.Name = "pictureBox_namalsk";
+            this.pictureBox_namalsk.TabStop = false;
+            // 
             // metroLabel7
             // 
             resources.ApplyResources(this.metroLabel7, "metroLabel7");
@@ -602,8 +631,8 @@ namespace RMLauncher
             this.page_settigns.Controls.Add(this.button_aboutRM);
             this.page_settigns.Controls.Add(this.button_appRestart);
             this.page_settigns.Controls.Add(this.ComboBox_Style);
-            this.page_settigns.Controls.Add(this.CheckBox_discord);
-            this.page_settigns.Controls.Add(this.CheckBox_statistics);
+            this.page_settigns.Controls.Add(this.CheckBox_stats);
+            this.page_settigns.Controls.Add(this.CheckBox_shutdown);
             this.page_settigns.Controls.Add(this.CheckBox_updates);
             this.page_settigns.Controls.Add(this.metroLabel39);
             this.page_settigns.Controls.Add(this.CheckBox_batteye);
@@ -656,23 +685,23 @@ namespace RMLauncher
             this.ComboBox_Style.UseSelectable = true;
             this.ComboBox_Style.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Style_SelectedIndexChanged);
             // 
-            // CheckBox_discord
+            // CheckBox_stats
             // 
-            resources.ApplyResources(this.CheckBox_discord, "CheckBox_discord");
-            this.CheckBox_discord.Checked = true;
-            this.CheckBox_discord.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBox_discord.Name = "CheckBox_discord";
-            this.CheckBox_discord.Style = MetroFramework.MetroColorStyle.Red;
-            this.CheckBox_discord.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.CheckBox_discord.UseSelectable = true;
+            resources.ApplyResources(this.CheckBox_stats, "CheckBox_stats");
+            this.CheckBox_stats.Checked = true;
+            this.CheckBox_stats.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckBox_stats.Name = "CheckBox_stats";
+            this.CheckBox_stats.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_stats.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.CheckBox_stats.UseSelectable = true;
             // 
-            // CheckBox_statistics
+            // CheckBox_shutdown
             // 
-            resources.ApplyResources(this.CheckBox_statistics, "CheckBox_statistics");
-            this.CheckBox_statistics.Name = "CheckBox_statistics";
-            this.CheckBox_statistics.Style = MetroFramework.MetroColorStyle.Red;
-            this.CheckBox_statistics.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.CheckBox_statistics.UseSelectable = true;
+            resources.ApplyResources(this.CheckBox_shutdown, "CheckBox_shutdown");
+            this.CheckBox_shutdown.Name = "CheckBox_shutdown";
+            this.CheckBox_shutdown.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_shutdown.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.CheckBox_shutdown.UseSelectable = true;
             // 
             // CheckBox_updates
             // 
@@ -892,71 +921,62 @@ namespace RMLauncher
             this.updateStats.Interval = 10000;
             this.updateStats.Tick += new System.EventHandler(this.updateStats_Tick);
             // 
-            // metroTextBox1
+            // TextBox_username
             // 
-            resources.ApplyResources(this.metroTextBox1, "metroTextBox1");
+            resources.ApplyResources(this.TextBox_username, "TextBox_username");
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.metroTextBox1.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
-            this.metroTextBox1.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.PromptText = "Ваш никнейм";
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMark = "Ваш никнейм";
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TextBox_username.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.TextBox_username.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
+            this.TextBox_username.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.TextBox_username.CustomButton.Name = "";
+            this.TextBox_username.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.TextBox_username.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TextBox_username.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.TextBox_username.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TextBox_username.CustomButton.UseSelectable = true;
+            this.TextBox_username.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.TextBox_username.Lines = new string[0];
+            this.TextBox_username.MaxLength = 32767;
+            this.TextBox_username.Name = "TextBox_username";
+            this.TextBox_username.PasswordChar = '\0';
+            this.TextBox_username.PromptText = "Ваш никнейм";
+            this.TextBox_username.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox_username.SelectedText = "";
+            this.TextBox_username.SelectionLength = 0;
+            this.TextBox_username.SelectionStart = 0;
+            this.TextBox_username.ShortcutsEnabled = true;
+            this.TextBox_username.Style = MetroFramework.MetroColorStyle.Red;
+            this.TextBox_username.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.TextBox_username.UseSelectable = true;
+            this.TextBox_username.WaterMark = "Ваш никнейм";
+            this.TextBox_username.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TextBox_username.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // pictureBox_cherno2
+            // tile_beta
             // 
-            resources.ApplyResources(this.pictureBox_cherno2, "pictureBox_cherno2");
-            this.pictureBox_cherno2.Image = global::RMLauncher.Properties.Resources.red_cherno;
-            this.pictureBox_cherno2.Name = "pictureBox_cherno2";
-            this.pictureBox_cherno2.TabStop = false;
+            this.tile_beta.ActiveControl = null;
+            this.tile_beta.Cursor = System.Windows.Forms.Cursors.Help;
+            resources.ApplyResources(this.tile_beta, "tile_beta");
+            this.tile_beta.Name = "tile_beta";
+            this.tile_beta.Style = MetroFramework.MetroColorStyle.Red;
+            this.tile_beta.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.tile_beta.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.ToolTip_help.SetToolTip(this.tile_beta, resources.GetString("tile_beta.ToolTip"));
+            this.tile_beta.UseSelectable = true;
+            this.tile_beta.Click += new System.EventHandler(this.tile_beta_Click);
             // 
-            // pictureBox_cherno1
+            // ToolTip_help
             // 
-            resources.ApplyResources(this.pictureBox_cherno1, "pictureBox_cherno1");
-            this.pictureBox_cherno1.Image = global::RMLauncher.Properties.Resources.red_cherno;
-            this.pictureBox_cherno1.Name = "pictureBox_cherno1";
-            this.pictureBox_cherno1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox_namalsk
-            // 
-            resources.ApplyResources(this.pictureBox_namalsk, "pictureBox_namalsk");
-            this.pictureBox_namalsk.Image = global::RMLauncher.Properties.Resources.red_namalsk;
-            this.pictureBox_namalsk.Name = "pictureBox_namalsk";
-            this.pictureBox_namalsk.TabStop = false;
+            this.ToolTip_help.OwnerDraw = true;
             // 
             // RMForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.tile_beta);
+            this.Controls.Add(this.TextBox_username);
             this.Controls.Add(this.metroLabel37);
             this.Controls.Add(this.button_changeLanguage);
             this.Controls.Add(this.button_checkMods);
@@ -975,18 +995,18 @@ namespace RMLauncher
             this.page_main.ResumeLayout(false);
             this.panel_main.ResumeLayout(false);
             this.metroPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).EndInit();
             this.metroPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).EndInit();
             this.metroPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).EndInit();
             this.page_settigns.ResumeLayout(false);
             this.page_settigns.PerformLayout();
             this.page_about.ResumeLayout(false);
             this.panel_info.ResumeLayout(false);
             this.panel_right.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1070,8 +1090,8 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroLabel metroLabel38;
         private MetroFramework.Controls.MetroCheckBox CheckBox_batteye;
         private MetroFramework.Controls.MetroCheckBox CheckBox_priority;
-        private MetroFramework.Controls.MetroCheckBox CheckBox_discord;
-        private MetroFramework.Controls.MetroCheckBox CheckBox_statistics;
+        private MetroFramework.Controls.MetroCheckBox CheckBox_stats;
+        private MetroFramework.Controls.MetroCheckBox CheckBox_shutdown;
         private MetroFramework.Controls.MetroCheckBox CheckBox_updates;
         private MetroFramework.Controls.MetroLabel metroLabel39;
         private MetroFramework.Controls.MetroComboBox ComboBox_Style;
@@ -1081,7 +1101,9 @@ namespace RMLauncher
         private System.Windows.Forms.Timer updateOnline;
         private System.Windows.Forms.Timer updatePing;
         private System.Windows.Forms.Timer updateStats;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox TextBox_username;
+        private MetroFramework.Controls.MetroTile tile_beta;
+        private MetroFramework.Drawing.Html.HtmlToolTip ToolTip_help;
     }
 }
 

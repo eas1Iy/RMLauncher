@@ -2,6 +2,7 @@
 using RMLauncher.Properties;
 using RMLauncher.RM_classes;
 using RMLauncher.RM_classes.DayZ;
+using RMLauncher.RM_Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,10 +36,33 @@ namespace RMLauncher
             else ru = true;
         }
 
-        void RMForm_Load(object sender, EventArgs e)
+        async void RMForm_Load(object sender, EventArgs e)
         {
             getInfo = new GetServersInformation();
+            await Task.Delay(200);
+            LoadSettings();
             StatsChange();
+        }
+
+        void LoadSettings()
+        {
+            TextBox_username.Text = Settings.Default["username"].ToString();
+            CheckBox_windowmode.Checked = Convert.ToBoolean(Settings.Default["window"]);
+            CheckBox_priority.Checked = Convert.ToBoolean(Settings.Default["hight"]);
+            CheckBox_updates.Checked = Convert.ToBoolean(Settings.Default["updates"]);
+            CheckBox_shutdown.Checked = Convert.ToBoolean(Settings.Default["shutdown"]);
+            CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
+        }
+
+        void SaveSettings()
+        {
+            Settings.Default["window"] = CheckBox_windowmode.Checked;
+            Settings.Default["hight"] = CheckBox_priority.Checked;
+            Settings.Default["updates"] = CheckBox_updates.Checked;
+            Settings.Default["shutdown"] = CheckBox_shutdown.Checked;
+            Settings.Default["stats"] = CheckBox_stats.Checked;
+            Settings.Default["username"] = TextBox_username.Text;
+            Settings.Default.Save();
         }
 
         void StatsChange()
@@ -82,9 +106,14 @@ namespace RMLauncher
 
         public bool GameStart(byte serverID)
         {
-
-
-            return true;
+            SaveSettings();
+            if (DayZLaunch.GameStart(serverID) == true)
+            {
+                this.WindowState = FormWindowState.Minimized;
+                Alert("Success game start", RMNotification.enmType.Success);
+                return true;
+            } else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
+            
         }
         #endregion
 
@@ -110,6 +139,12 @@ namespace RMLauncher
         #endregion
 
         #region Остальное
+        public void Alert(string msg, RMNotification.enmType type)
+        {
+            RMNotification frm = new RMNotification();
+            frm.showAlert(msg, type);
+        }
+
         void ComboBox_Style_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (ComboBox_Style.SelectedIndex)
@@ -140,8 +175,11 @@ namespace RMLauncher
             CheckBox_priority.Style = metroColorStyle;
             CheckBox_batteye.Style = metroColorStyle;
             CheckBox_updates.Style = metroColorStyle;
-            CheckBox_statistics.Style = metroColorStyle;
-            CheckBox_discord.Style = metroColorStyle;
+            CheckBox_shutdown.Style = metroColorStyle;
+            CheckBox_stats.Style = metroColorStyle;
+
+            tile_beta.Style = metroColorStyle;
+            TextBox_username.Style = metroColorStyle;
 
             ComboBox_Style.Style = metroColorStyle;
             StyleManager.Style = metroColorStyle;
@@ -220,11 +258,6 @@ namespace RMLauncher
             Application.Exit();
         }
 
-        void SaveSettings()
-        {
-            Settings.Default.Save();
-        }
-
         void button_changeLanguage_Click(object sender, EventArgs e)
         {
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
@@ -251,9 +284,15 @@ namespace RMLauncher
             else MetroMessageBox.Show(this, "Модификации сервера: Namalsk\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             if (DayZCheckMods.IsInstalledCheck(2))
-                MetroMessageBox.Show(this, "Модификации серверов: Chernarus и Livonia\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else MetroMessageBox.Show(this, "Модификации сервера: Chernarus и Livonia\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroMessageBox.Show(this, "Модификации серверов: Chernarus\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else MetroMessageBox.Show(this, "Модификации сервера: Chernarus\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        void tile_beta_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, $"Application version: {ProductVersion}");
         }
         #endregion
+
+
     }
 }

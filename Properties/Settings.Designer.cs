@@ -38,12 +38,12 @@ namespace RMLauncher.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string nickname {
+        public string username {
             get {
-                return ((string)(this["nickname"]));
+                return ((string)(this["username"]));
             }
             set {
-                this["nickname"] = value;
+                this["username"] = value;
             }
         }
         
@@ -62,24 +62,72 @@ namespace RMLauncher.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string steamPath {
-            get {
-                return ((string)(this["steamPath"]));
-            }
-            set {
-                this["steamPath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string style {
             get {
                 return ((string)(this["style"]));
             }
             set {
                 this["style"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool window {
+            get {
+                return ((bool)(this["window"]));
+            }
+            set {
+                this["window"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool hight {
+            get {
+                return ((bool)(this["hight"]));
+            }
+            set {
+                this["hight"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool updates {
+            get {
+                return ((bool)(this["updates"]));
+            }
+            set {
+                this["updates"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool shutdown {
+            get {
+                return ((bool)(this["shutdown"]));
+            }
+            set {
+                this["shutdown"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool stats {
+            get {
+                return ((bool)(this["stats"]));
+            }
+            set {
+                this["stats"] = value;
             }
         }
     }

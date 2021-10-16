@@ -58,7 +58,6 @@ namespace RMLauncher.RM_Forms
             this.Progress.Style = MetroFramework.MetroColorStyle.Red;
             this.Progress.TabIndex = 0;
             this.Progress.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Progress.Value = 70;
             // 
             // label_proc
             // 

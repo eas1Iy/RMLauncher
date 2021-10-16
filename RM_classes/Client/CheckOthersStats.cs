@@ -18,7 +18,7 @@ namespace RMLauncher.RM_classes
 
         public static bool DayZ()
         {
-            if (ProcessExist("DayZ_x64.exe"))
+            if (ProcessExist("DayZ_x64.exe") || ProcessExist("DayZ_BE.exe"))
                 return true;
             else return false;
         }
