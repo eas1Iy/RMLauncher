@@ -163,7 +163,7 @@ namespace RMLauncher
             this.tab.Controls.Add(this.page_settigns);
             this.tab.Controls.Add(this.page_about);
             this.tab.Name = "tab";
-            this.tab.SelectedIndex = 1;
+            this.tab.SelectedIndex = 0;
             this.tab.Style = MetroFramework.MetroColorStyle.Red;
             this.tab.TabStop = false;
             this.tab.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -694,6 +694,7 @@ namespace RMLauncher
             this.CheckBox_stats.Style = MetroFramework.MetroColorStyle.Red;
             this.CheckBox_stats.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_stats.UseSelectable = true;
+            this.CheckBox_stats.CheckedChanged += new System.EventHandler(this.CheckBox_stats_CheckedChanged);
             // 
             // CheckBox_shutdown
             // 
@@ -889,10 +890,12 @@ namespace RMLauncher
             // metroLabel37
             // 
             resources.ApplyResources(this.metroLabel37, "metroLabel37");
+            this.metroLabel37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLabel37.FontSize = MetroFramework.MetroLabelSize.Small;
             this.metroLabel37.Name = "metroLabel37";
             this.metroLabel37.Style = MetroFramework.MetroColorStyle.Red;
             this.metroLabel37.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ToolTip_help.SetToolTip(this.metroLabel37, resources.GetString("metroLabel37.ToolTip"));
             // 
             // button_changeLanguage
             // 
@@ -906,13 +909,13 @@ namespace RMLauncher
             // updateOnline
             // 
             this.updateOnline.Enabled = true;
-            this.updateOnline.Interval = 30000;
+            this.updateOnline.Interval = 10000;
             this.updateOnline.Tick += new System.EventHandler(this.updateOnline_Tick);
             // 
             // updatePing
             // 
             this.updatePing.Enabled = true;
-            this.updatePing.Interval = 60000;
+            this.updatePing.Interval = 10000;
             this.updatePing.Tick += new System.EventHandler(this.updatePing_Tick);
             // 
             // updateStats
@@ -1098,12 +1101,12 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroButton button_aboutDEV;
         private MetroFramework.Controls.MetroButton button_aboutRM;
         private MetroFramework.Controls.MetroButton button_appRestart;
-        private System.Windows.Forms.Timer updateOnline;
-        private System.Windows.Forms.Timer updatePing;
-        private System.Windows.Forms.Timer updateStats;
         private MetroFramework.Controls.MetroTextBox TextBox_username;
         private MetroFramework.Controls.MetroTile tile_beta;
         private MetroFramework.Drawing.Html.HtmlToolTip ToolTip_help;
+        public System.Windows.Forms.Timer updateOnline;
+        public System.Windows.Forms.Timer updatePing;
+        public System.Windows.Forms.Timer updateStats;
     }
 }
 

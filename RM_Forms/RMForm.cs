@@ -4,13 +4,7 @@ using RMLauncher.RM_classes;
 using RMLauncher.RM_classes.DayZ;
 using RMLauncher.RM_Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,7 +45,8 @@ namespace RMLauncher
             CheckBox_priority.Checked = Convert.ToBoolean(Settings.Default["hight"]);
             CheckBox_updates.Checked = Convert.ToBoolean(Settings.Default["updates"]);
             CheckBox_shutdown.Checked = Convert.ToBoolean(Settings.Default["shutdown"]);
-            CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
+            //CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
+            //AutoStats();
         }
 
         void SaveSettings()
@@ -77,9 +72,16 @@ namespace RMLauncher
             label_cherno1_map.Text = "chernarus";
             label_cherno2_map.Text = "chernarus";
             //
-            updateStats_Tick(null, null);
-            updateOnline_Tick(null, null);
-            updatePing_Tick(null, null);
+            try
+            {
+               // UpdateStat();
+                //UpdateOnline();
+                //UpdatePing();
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, $"\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         #endregion
 
@@ -111,9 +113,14 @@ namespace RMLauncher
             {
                 this.WindowState = FormWindowState.Minimized;
                 Alert("Success game start", RMNotification.enmType.Success);
+
+                if (CheckBox_shutdown.Checked == true)
+                    Application.Exit();
+
                 return true;
-            } else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
-            
+            }
+            else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
+
         }
         #endregion
 
@@ -125,11 +132,12 @@ namespace RMLauncher
 
         void button_appRestart_Click(object sender, EventArgs e)
         {
+            SaveSettings();
             Application.Restart();
         }
         void button_aboutDEV_Click(object sender, EventArgs e)
         {
-            MetroMessageBox.Show(this, "developer - www.github.com/eas1Iy", "Contacts DEV",MessageBoxButtons.OK);
+            MetroMessageBox.Show(this, "developer - www.github.com/eas1Iy", "Contacts DEV", MessageBoxButtons.OK);
         }
 
         #endregion
@@ -195,7 +203,8 @@ namespace RMLauncher
                 pictureBox_cherno2.Image = Resources.green_cherno;
             }
             else if (metroColorStyle == MetroColorStyle.Black)
-            {;
+            {
+                ;
                 pictureBox_namalsk.Image = Resources.black_namalsk;
                 pictureBox_cherno1.Image = Resources.black_cherno;
                 pictureBox_cherno2.Image = Resources.black_cherno;
@@ -209,37 +218,39 @@ namespace RMLauncher
         }
         void updateOnline_Tick(object sender, EventArgs e)
         {
-            getInfo.serversAllOnline = 0;
-            label_namalsk_online.Text = getInfo.GetOnlineServer(1);
-            //label_livonia_online.Text = getInfo.GetOnlineServer(2);
-            label_cherno1_online.Text = getInfo.GetOnlineServer(3);
-            //label_cherno2_online.Text = getInfo.GetOnlineServer(4);
-            //
-            label_statusOnline.Text = Convert.ToString(getInfo.OnlineAll(0));
+            UpdateOnline();
         }
 
         void updatePing_Tick(object sender, EventArgs e)
         {
-            label_namalsk_ping.Text = Convert.ToString(getInfo.GetPingServer(1));
-            //label_livonia_ping.Text = Convert.ToString(getInfo.GetPingServer(2));
-            label_cherno1_ping.Text = Convert.ToString(getInfo.GetPingServer(3));
-            //label_cherno2_ping.Text = Convert.ToString(getInfo.GetPingServer(4));
+            UpdatePing();
         }
 
-        void button_updateStat_Click(object sender, EventArgs e)
+        void UpdateOnline()
         {
-            updateOnline_Tick(sender, e);
-            updatePing_Tick(sender, e);
+            getInfo.serversAllOnline = 0;
+
+            label_namalsk_online.Text = getInfo.GetOnlineServer(1);
+            label_cherno1_online.Text = getInfo.GetOnlineServer(2);
+
+            label_statusOnline.Text = Convert.ToString(getInfo.OnlineAll(0));
         }
-        async void updateStats_Tick(object sender, EventArgs e)
+
+        void UpdatePing()
+        {
+            label_namalsk_ping.Text = Convert.ToString(getInfo.GetPingServer(1));
+            label_cherno1_ping.Text = Convert.ToString(getInfo.GetPingServer(2));
+        }
+
+        async void UpdateStat()
         {
             if (CheckOthersStats.DayZ()) label_statusDayZ.Text = "Active"; else label_statusDayZ.Text = "Offline";
             if (CheckOthersStats.Steam()) label_statusSteam.Text = "Active";
             else
             {
                 label_statusSteam.Text = "Offline";
-                steamOff:
-                if(CheckOthersStats.Steam()) { }
+            steamOff:
+                if (CheckOthersStats.Steam()) { }
                 else
                 {
                     if (MetroMessageBox.Show(this, "Please start STEAM!", "Steam error", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.No) Application.Exit();
@@ -250,6 +261,24 @@ namespace RMLauncher
                     }
                 }
             }
+        }
+
+        void button_updateStat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UpdateStat();
+                //UpdateOnline();
+                UpdatePing();
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, $"\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        void updateStats_Tick(object sender, EventArgs e)
+        {
+            UpdateStat();
         }
 
         void RMForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -291,8 +320,26 @@ namespace RMLauncher
         {
             MetroMessageBox.Show(this, $"Application version: {ProductVersion}");
         }
+
+        void AutoStats()
+        {
+            //if (CheckBox_stats.Checked == true)
+            //{
+            //    updateStats.Enabled = false;
+            //    updateOnline.Enabled = false;
+            //    updatePing.Enabled = false;
+            //}
+            //else
+            //{
+            //    updateStats.Enabled = true;
+            //    updateOnline.Enabled = true;
+            //    updatePing.Enabled = true;
+            //}
+        }
+        void CheckBox_stats_CheckedChanged(object sender, EventArgs e)
+        {
+            AutoStats();
+        }
         #endregion
-
-
     }
 }

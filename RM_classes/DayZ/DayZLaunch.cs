@@ -1,5 +1,6 @@
 ﻿using RMLauncher.Properties;
 using RMLauncher.RM_classes.DayZ;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -25,8 +26,8 @@ namespace RMLauncher.RM_classes
 
         public static Process GameProcess;
 
-        // public static bool IsWindow = Convert.ToBoolean(Settings.Default["window"]);
-        // public static bool IsHight = Convert.ToBoolean(Settings.Default["hight"]);
+        public static bool IsWindow = Convert.ToBoolean(Settings.Default["window"]); // -window
+        public static bool IsHight = Convert.ToBoolean(Settings.Default["hight"]); // GameProcess.PriorityClass = ProcessPriorityClass.High;
 
         public static bool GameStart(byte ID)
         {
@@ -38,12 +39,19 @@ namespace RMLauncher.RM_classes
                     {
                         case 1: // namalsk
                             {
-                                _gameArgument = $@"{RM_namalsk} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                                if (IsWindow)
+                                _gameArgument = $@"{RM_namalsk} -window -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                                else _gameArgument = $@"{RM_namalsk} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+
+
                                 if (GameLaunch() == true) { return true; } else return false;
                             }
                         case 2: // cherno 1pp
                             {
-                                _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+                                else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+
                                 if (GameLaunch() == true) { return true; } else return false;
                             }
                         default: return false;
@@ -65,6 +73,9 @@ namespace RMLauncher.RM_classes
                 GameProcess = new Process();
                 GameProcess.StartInfo.FileName = _pathExe;
                 GameProcess.StartInfo.Arguments = _gameArgument;
+
+                if (IsHight) GameProcess.PriorityClass = ProcessPriorityClass.High;
+
                 GameProcess.StartInfo.Verb = "runas";
                 GameProcess.Start();
                 return true;
