@@ -23,51 +23,73 @@ namespace RMLauncher.RM_classes
 
         public string GetOnlineServer(int serverID)
         {
-            switch (serverID)
+            try
             {
-                case 1:
-                    {
-                        serverQuery = new ServerQuery(ip_namalsk);
-                        break;
-                    }
-                case 2:
-                    {
-                        serverQuery = new ServerQuery(ip_cherno);
-                        break;
-                    }
+                switch (serverID)
+                {
+                    case 1:
+                        {
+                            serverQuery = new ServerQuery(ip_namalsk);
+                            break;
+                        }
+                    case 2:
+                        {
+                            serverQuery = new ServerQuery(ip_cherno);
+                            break;
+                        }
+                }
+
+                serverInfo = serverQuery.GetServerInfo();
+
+                OnlineAll(serverInfo.Players);
+
+                return $"{serverInfo.Players}/{serverInfo.MaxPlayers}";
             }
-
-            serverInfo = serverQuery.GetServerInfo();
-
-            OnlineAll(serverInfo.Players);
-
-            return $"{serverInfo.Players}/{serverInfo.MaxPlayers}";
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public int GetPingServer(int serverID)
         {
-            switch (serverID)
+            try
             {
-                case 1:
-                    {
-                        serverQuery = new ServerQuery(ip_namalsk);
-                        break;
-                    }
-                case 2:
-                    {
-                        serverQuery = new ServerQuery(ip_cherno);
-                        break;
-                    }
+                switch (serverID)
+                {
+                    case 1:
+                        {
+                            serverQuery = new ServerQuery(ip_namalsk);
+                            break;
+                        }
+                    case 2:
+                        {
+                            serverQuery = new ServerQuery(ip_cherno);
+                            break;
+                        }
+                }
+
+                serverInfo = serverQuery.GetServerInfo();
+
+                return Convert.ToInt32(serverInfo.Ping);
             }
-
-            serverInfo = serverQuery.GetServerInfo();
-
-            return Convert.ToInt32(serverInfo.Ping);
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public int OnlineAll(int tempOnline)
         {
-            return serversAllOnline += tempOnline;
+            try
+            {
+                return serversAllOnline += tempOnline;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

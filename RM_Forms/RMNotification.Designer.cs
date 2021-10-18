@@ -72,9 +72,11 @@ namespace RMLauncher.RM_Forms
             this.Name = "RMNotification";
             this.Opacity = 0.6D;
             this.Resizable = false;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "Notification";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.RMNotification_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
             this.ResumeLayout(false);

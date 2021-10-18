@@ -101,7 +101,10 @@ namespace RMLauncher
             this.metroLabel38 = new MetroFramework.Controls.MetroLabel();
             this.page_about = new System.Windows.Forms.TabPage();
             this.panel_info = new MetroFramework.Controls.MetroPanel();
-            this.label_info = new MetroFramework.Controls.MetroLabel();
+            this.label_help = new MetroFramework.Controls.MetroLabel();
+            this.pb_help = new System.Windows.Forms.PictureBox();
+            this.button_back = new MetroFramework.Controls.MetroButton();
+            this.button_next = new MetroFramework.Controls.MetroButton();
             this.panel_right = new MetroFramework.Controls.MetroPanel();
             this.label_statusOnline = new MetroFramework.Controls.MetroLabel();
             this.label_statusServers = new MetroFramework.Controls.MetroLabel();
@@ -116,9 +119,7 @@ namespace RMLauncher
             this.button_checkMods = new MetroFramework.Controls.MetroButton();
             this.metroLabel37 = new MetroFramework.Controls.MetroLabel();
             this.button_changeLanguage = new MetroFramework.Controls.MetroButton();
-            this.updateOnline = new System.Windows.Forms.Timer(this.components);
-            this.updatePing = new System.Windows.Forms.Timer(this.components);
-            this.updateStats = new System.Windows.Forms.Timer(this.components);
+            this.update = new System.Windows.Forms.Timer(this.components);
             this.TextBox_username = new MetroFramework.Controls.MetroTextBox();
             this.tile_beta = new MetroFramework.Controls.MetroTile();
             this.ToolTip_help = new MetroFramework.Drawing.Html.HtmlToolTip();
@@ -137,6 +138,7 @@ namespace RMLauncher
             this.page_settigns.SuspendLayout();
             this.page_about.SuspendLayout();
             this.panel_info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_help)).BeginInit();
             this.panel_right.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,7 +154,7 @@ namespace RMLauncher
             // 
             // StyleManager
             // 
-            this.StyleManager.Owner = null;
+            this.StyleManager.Owner = this;
             this.StyleManager.Style = MetroFramework.MetroColorStyle.Red;
             this.StyleManager.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -679,7 +681,7 @@ namespace RMLauncher
             resources.GetString("ComboBox_Style.Items1"),
             resources.GetString("ComboBox_Style.Items2")});
             this.ComboBox_Style.Name = "ComboBox_Style";
-            this.ComboBox_Style.PromptText = "Choose a color palette (need restart)";
+            this.ComboBox_Style.PromptText = "Choose a color palette (wait 5 seconds)";
             this.ComboBox_Style.Style = MetroFramework.MetroColorStyle.Red;
             this.ComboBox_Style.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ComboBox_Style.UseSelectable = true;
@@ -687,9 +689,9 @@ namespace RMLauncher
             // 
             // CheckBox_stats
             // 
-            resources.ApplyResources(this.CheckBox_stats, "CheckBox_stats");
             this.CheckBox_stats.Checked = true;
             this.CheckBox_stats.CheckState = System.Windows.Forms.CheckState.Checked;
+            resources.ApplyResources(this.CheckBox_stats, "CheckBox_stats");
             this.CheckBox_stats.Name = "CheckBox_stats";
             this.CheckBox_stats.Style = MetroFramework.MetroColorStyle.Red;
             this.CheckBox_stats.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -706,9 +708,9 @@ namespace RMLauncher
             // 
             // CheckBox_updates
             // 
-            resources.ApplyResources(this.CheckBox_updates, "CheckBox_updates");
             this.CheckBox_updates.Checked = true;
             this.CheckBox_updates.CheckState = System.Windows.Forms.CheckState.Checked;
+            resources.ApplyResources(this.CheckBox_updates, "CheckBox_updates");
             this.CheckBox_updates.Name = "CheckBox_updates";
             this.CheckBox_updates.Style = MetroFramework.MetroColorStyle.Red;
             this.CheckBox_updates.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -761,7 +763,10 @@ namespace RMLauncher
             // 
             // panel_info
             // 
-            this.panel_info.Controls.Add(this.label_info);
+            this.panel_info.Controls.Add(this.label_help);
+            this.panel_info.Controls.Add(this.pb_help);
+            this.panel_info.Controls.Add(this.button_back);
+            this.panel_info.Controls.Add(this.button_next);
             resources.ApplyResources(this.panel_info, "panel_info");
             this.panel_info.HorizontalScrollbar = true;
             this.panel_info.HorizontalScrollbarBarColor = true;
@@ -775,12 +780,40 @@ namespace RMLauncher
             this.panel_info.VerticalScrollbarHighlightOnWheel = false;
             this.panel_info.VerticalScrollbarSize = 10;
             // 
-            // label_info
+            // label_help
             // 
-            resources.ApplyResources(this.label_info, "label_info");
-            this.label_info.Name = "label_info";
-            this.label_info.Style = MetroFramework.MetroColorStyle.Red;
-            this.label_info.Theme = MetroFramework.MetroThemeStyle.Dark;
+            resources.ApplyResources(this.label_help, "label_help");
+            this.label_help.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label_help.Name = "label_help";
+            this.label_help.Style = MetroFramework.MetroColorStyle.Red;
+            this.label_help.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.label_help.WrapToLine = true;
+            this.label_help.Click += new System.EventHandler(this.label_help_Click);
+            // 
+            // pb_help
+            // 
+            resources.ApplyResources(this.pb_help, "pb_help");
+            this.pb_help.Image = global::RMLauncher.Properties.Resources.image_help1;
+            this.pb_help.Name = "pb_help";
+            this.pb_help.TabStop = false;
+            // 
+            // button_back
+            // 
+            resources.ApplyResources(this.button_back, "button_back");
+            this.button_back.Name = "button_back";
+            this.button_back.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_back.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.button_back.UseSelectable = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
+            // 
+            // button_next
+            // 
+            resources.ApplyResources(this.button_next, "button_next");
+            this.button_next.Name = "button_next";
+            this.button_next.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_next.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.button_next.UseSelectable = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
             // 
             // panel_right
             // 
@@ -906,23 +939,11 @@ namespace RMLauncher
             this.button_changeLanguage.UseSelectable = true;
             this.button_changeLanguage.Click += new System.EventHandler(this.button_changeLanguage_Click);
             // 
-            // updateOnline
+            // update
             // 
-            this.updateOnline.Enabled = true;
-            this.updateOnline.Interval = 10000;
-            this.updateOnline.Tick += new System.EventHandler(this.updateOnline_Tick);
-            // 
-            // updatePing
-            // 
-            this.updatePing.Enabled = true;
-            this.updatePing.Interval = 10000;
-            this.updatePing.Tick += new System.EventHandler(this.updatePing_Tick);
-            // 
-            // updateStats
-            // 
-            this.updateStats.Enabled = true;
-            this.updateStats.Interval = 10000;
-            this.updateStats.Tick += new System.EventHandler(this.updateStats_Tick);
+            this.update.Enabled = true;
+            this.update.Interval = 10000;
+            this.update.Tick += new System.EventHandler(this.updateStats_Tick);
             // 
             // TextBox_username
             // 
@@ -944,7 +965,7 @@ namespace RMLauncher
             this.TextBox_username.MaxLength = 32767;
             this.TextBox_username.Name = "TextBox_username";
             this.TextBox_username.PasswordChar = '\0';
-            this.TextBox_username.PromptText = "Ваш никнейм";
+            this.TextBox_username.PromptText = "Your nickname";
             this.TextBox_username.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TextBox_username.SelectedText = "";
             this.TextBox_username.SelectionLength = 0;
@@ -953,7 +974,7 @@ namespace RMLauncher
             this.TextBox_username.Style = MetroFramework.MetroColorStyle.Red;
             this.TextBox_username.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TextBox_username.UseSelectable = true;
-            this.TextBox_username.WaterMark = "Ваш никнейм";
+            this.TextBox_username.WaterMark = "Your nickname";
             this.TextBox_username.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TextBox_username.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -972,6 +993,7 @@ namespace RMLauncher
             // 
             // ToolTip_help
             // 
+            this.ToolTip_help.IsBalloon = true;
             this.ToolTip_help.OwnerDraw = true;
             // 
             // RMForm
@@ -1009,6 +1031,7 @@ namespace RMLauncher
             this.page_settigns.PerformLayout();
             this.page_about.ResumeLayout(false);
             this.panel_info.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_help)).EndInit();
             this.panel_right.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1034,7 +1057,6 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroLabel label_statusSteam;
         private MetroFramework.Controls.MetroLabel label_statusOnline;
         private MetroFramework.Controls.MetroPanel panel_info;
-        private MetroFramework.Controls.MetroLabel label_info;
         private MetroFramework.Controls.MetroPanel panel_main;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroTile Tile_servers;
@@ -1104,9 +1126,11 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroTextBox TextBox_username;
         private MetroFramework.Controls.MetroTile tile_beta;
         private MetroFramework.Drawing.Html.HtmlToolTip ToolTip_help;
-        public System.Windows.Forms.Timer updateOnline;
-        public System.Windows.Forms.Timer updatePing;
-        public System.Windows.Forms.Timer updateStats;
+        public System.Windows.Forms.Timer update;
+        private MetroFramework.Controls.MetroButton button_back;
+        private MetroFramework.Controls.MetroButton button_next;
+        private System.Windows.Forms.PictureBox pb_help;
+        private MetroFramework.Controls.MetroLabel label_help;
     }
 }
 

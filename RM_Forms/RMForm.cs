@@ -4,6 +4,7 @@ using RMLauncher.RM_classes;
 using RMLauncher.RM_classes.DayZ;
 using RMLauncher.RM_Forms;
 using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,9 +16,8 @@ namespace RMLauncher
     {
         #region Загрузка и переменные
 
-
         GetServersInformation getInfo;
-        CheckOthersStats getStats;
+        //CheckOthersStats getStats;
 
         public bool ru;
         public RMForm()
@@ -32,10 +32,19 @@ namespace RMLauncher
 
         async void RMForm_Load(object sender, EventArgs e)
         {
-            getInfo = new GetServersInformation();
-            await Task.Delay(200);
-            LoadSettings();
-            StatsChange();
+            try
+            {
+                getInfo = new GetServersInformation();
+                await Task.Delay(200);
+                LoadSettings();
+                await Task.Delay(200);
+                StatsChange();
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, $"\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         void LoadSettings()
@@ -45,8 +54,8 @@ namespace RMLauncher
             CheckBox_priority.Checked = Convert.ToBoolean(Settings.Default["hight"]);
             CheckBox_updates.Checked = Convert.ToBoolean(Settings.Default["updates"]);
             CheckBox_shutdown.Checked = Convert.ToBoolean(Settings.Default["shutdown"]);
-            //CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
-            //AutoStats();
+            CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
+            AutoStats();
         }
 
         void SaveSettings()
@@ -62,6 +71,7 @@ namespace RMLauncher
 
         void StatsChange()
         {
+
             label_namalsk_pp.Text = "1PP";
             label_livonia_pp.Text = "3PP";
             label_cherno1_pp.Text = "1PP";
@@ -72,16 +82,16 @@ namespace RMLauncher
             label_cherno1_map.Text = "chernarus";
             label_cherno2_map.Text = "chernarus";
             //
-            try
+            Thread t = new Thread(delegate ()
             {
-               // UpdateStat();
-                //UpdateOnline();
-                //UpdatePing();
-            }
-            catch (Exception ex)
-            {
-                MetroMessageBox.Show(this, $"\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                this.Invoke(new Action(() =>
+                {
+                    UpdateStat();
+                    UpdateOnline();
+                    UpdatePing();
+                }));
+            });
+            t.Start();
         }
         #endregion
 
@@ -163,6 +173,7 @@ namespace RMLauncher
                 default: break;
             }
             SaveSettings();
+            Themes();
         }
 
         void Themes()
@@ -216,15 +227,6 @@ namespace RMLauncher
                 pictureBox_cherno2.Image = Resources.red_cherno;
             }
         }
-        void updateOnline_Tick(object sender, EventArgs e)
-        {
-            UpdateOnline();
-        }
-
-        void updatePing_Tick(object sender, EventArgs e)
-        {
-            UpdatePing();
-        }
 
         void UpdateOnline()
         {
@@ -267,9 +269,10 @@ namespace RMLauncher
         {
             try
             {
+
                 UpdateStat();
-                //UpdateOnline();
-                UpdatePing();
+                UpdateOnline();
+                //UpdatePing();
             }
             catch (Exception ex)
             {
@@ -279,6 +282,7 @@ namespace RMLauncher
         void updateStats_Tick(object sender, EventArgs e)
         {
             UpdateStat();
+            UpdateOnline();
         }
 
         void RMForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -318,28 +322,44 @@ namespace RMLauncher
         }
         void tile_beta_Click(object sender, EventArgs e)
         {
-            MetroMessageBox.Show(this, $"Application version: {ProductVersion}");
+            Alert($"Application version: {ProductVersion}", RMNotification.enmType.Info);
         }
 
         void AutoStats()
         {
-            //if (CheckBox_stats.Checked == true)
-            //{
-            //    updateStats.Enabled = false;
-            //    updateOnline.Enabled = false;
-            //    updatePing.Enabled = false;
-            //}
-            //else
-            //{
-            //    updateStats.Enabled = true;
-            //    updateOnline.Enabled = true;
-            //    updatePing.Enabled = true;
-            //}
+            if (CheckBox_stats.Checked == true)
+            {
+                update.Enabled = false;
+            }
+            else
+            {
+                update.Enabled = true;
+            }
         }
         void CheckBox_stats_CheckedChanged(object sender, EventArgs e)
         {
             AutoStats();
         }
         #endregion
+
+        void button_next_Click(object sender, EventArgs e)
+        {
+            button_next.Enabled = false;
+            pb_help.Image = Resources.image_help2;
+            button_back.Enabled = true;
+        }
+
+        void button_back_Click(object sender, EventArgs e)
+        {
+            button_back.Enabled = false;
+            pb_help.Image = Resources.image_help1;
+            button_next.Enabled = true;
+        }
+
+        void label_help_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/eas1Iy");
+            Alert("Show developer page", RMNotification.enmType.Info);
+        }
     }
 }

@@ -207,6 +207,8 @@
     <None Include="Resources\black_namalsk.png" />
     <None Include="Resources\green_cherno.png" />
     <None Include="Resources\green_namalsk.png" />
+    <None Include="Resources\image_help1.png" />
+    <None Include="Resources\image_help2.png" />
     <Content Include="RMIcon_Red.ico" />
     <Content Include="RMIcon_White.ico" />
     <Content Include="steam_api64.dll" />

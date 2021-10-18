@@ -117,170 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="page_main.Text" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="metroLabel30.Text" xml:space="preserve">
-    <value>View:</value>
-  </data>
-  <data name="metroLabel34.Text" xml:space="preserve">
-    <value>Ping:</value>
-  </data>
-  <data name="metroLabel35.Text" xml:space="preserve">
-    <value>Online:</value>
-  </data>
-  <data name="metroLabel36.Text" xml:space="preserve">
-    <value>Map:</value>
-  </data>
-  <data name="button_connect_cherno2.Text" xml:space="preserve">
-    <value>Join</value>
-  </data>
-  <data name="metroLabel22.Text" xml:space="preserve">
-    <value>View:</value>
-  </data>
-  <data name="metroLabel26.Text" xml:space="preserve">
-    <value>Ping:</value>
-  </data>
-  <data name="metroLabel27.Text" xml:space="preserve">
-    <value>Online:</value>
-  </data>
-  <data name="metroLabel28.Text" xml:space="preserve">
-    <value>Map:</value>
-  </data>
-  <data name="button_connect_cherno1.Text" xml:space="preserve">
-    <value>Join</value>
-  </data>
-  <data name="metroLabel14.Text" xml:space="preserve">
-    <value>View:</value>
-  </data>
-  <data name="metroLabel18.Text" xml:space="preserve">
-    <value>Ping:</value>
-  </data>
-  <data name="metroLabel19.Text" xml:space="preserve">
-    <value>Online:</value>
-  </data>
-  <data name="metroLabel20.Text" xml:space="preserve">
-    <value>Map:</value>
-  </data>
-  <data name="button_connect_livonia.Text" xml:space="preserve">
-    <value>Join</value>
-  </data>
-  <data name="Tile_servers.Text" xml:space="preserve">
-    <value>Servers</value>
-  </data>
-  <data name="metroLabel12.Text" xml:space="preserve">
-    <value>View:</value>
-  </data>
-  <data name="metroLabel7.Text" xml:space="preserve">
-    <value>Ping:</value>
-  </data>
-  <data name="metroLabel6.Text" xml:space="preserve">
-    <value>Online:</value>
-  </data>
-  <data name="metroLabel5.Text" xml:space="preserve">
-    <value>Map:</value>
-  </data>
-  <data name="button_connect_namalsk.Text" xml:space="preserve">
-    <value>Join</value>
-  </data>
-  <data name="page_settigns.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="button_aboutDEV.Text" xml:space="preserve">
-    <value>About the developer (launcher)</value>
-  </data>
-  <data name="button_aboutRM.Text" xml:space="preserve">
-    <value>About game servers</value>
-  </data>
-  <data name="button_appRestart.Text" xml:space="preserve">
-    <value>Forced reboot</value>
-  </data>
-  <data name="ComboBox_Style.Items" xml:space="preserve">
-    <value>Red</value>
-  </data>
-  <data name="ComboBox_Style.Items1" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="ComboBox_Style.Items2" xml:space="preserve">
-    <value>Black</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CheckBox_discord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 15</value>
-  </data>
-  <data name="CheckBox_discord.Text" xml:space="preserve">
-    <value>Automatic statistics update</value>
-  </data>
-  <data name="CheckBox_statistics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 15</value>
-  </data>
-  <data name="CheckBox_statistics.Text" xml:space="preserve">
-    <value>Auto shutdown launcher</value>
-  </data>
-  <data name="CheckBox_updates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 15</value>
-  </data>
-  <data name="CheckBox_updates.Text" xml:space="preserve">
-    <value>Auto-updates</value>
-  </data>
-  <data name="metroLabel39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
-  </data>
-  <data name="metroLabel39.Text" xml:space="preserve">
-    <value>Launcher settings</value>
-  </data>
-  <data name="CheckBox_batteye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 15</value>
-  </data>
-  <data name="CheckBox_batteye.Text" xml:space="preserve">
-    <value>Skip anti-cheat (will not log into the server)</value>
-  </data>
-  <data name="CheckBox_priority.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 15</value>
-  </data>
-  <data name="CheckBox_priority.Text" xml:space="preserve">
-    <value>High priority</value>
-  </data>
-  <data name="CheckBox_windowmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 15</value>
-  </data>
-  <data name="CheckBox_windowmode.Text" xml:space="preserve">
-    <value>Window mode</value>
-  </data>
-  <data name="metroLabel38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 19</value>
-  </data>
-  <data name="metroLabel38.Text" xml:space="preserve">
-    <value>Game settings</value>
-  </data>
-  <data name="page_about.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label_info.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="label_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>751, 313</value>
-  </data>
-  <data name="label_info.Text" xml:space="preserve">
-    <value>More information in discord.</value>
-  </data>
-  <data name="metroLabel3.Text" xml:space="preserve">
-    <value>All online</value>
-  </data>
-  <data name="Tile_stats.Text" xml:space="preserve">
-    <value>Statistics</value>
-  </data>
-  <data name="button_updateStat.Text" xml:space="preserve">
-    <value>Update stats</value>
+  <data name="button_changeLanguage.Text" xml:space="preserve">
+    <value>Сменить язык</value>
   </data>
   <data name="button_checkMods.Text" xml:space="preserve">
     <value>Check modes</value>
   </data>
-  <data name="button_changeLanguage.Text" xml:space="preserve">
-    <value>Сменить язык</value>
+  <data name="button_updateStat.Text" xml:space="preserve">
+    <value>Update stats</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAqBAAAJ4EAAAwMAAAAQAgAKglAABGFQAAKAAAABAA
@@ -536,5 +382,167 @@
         AAAAHwAA+AAAAAB/AAD8AAAAAH8AAP4AAAAB/wAA/4AAAAH/AAD/wAAAB/8AAP/wAAAf/wAA//4AAP//
         AAD//8AH//8AAP///////wAA////////AAA=
 </value>
+  </data>
+  <data name="page_main.Text" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="metroLabel30.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="metroLabel34.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel35.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel36.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_cherno2.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="metroLabel22.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="metroLabel26.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel27.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel28.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_cherno1.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="metroLabel14.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="metroLabel18.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel19.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel20.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_livonia.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Tile_servers.Text" xml:space="preserve">
+    <value>Servers</value>
+  </data>
+  <data name="metroLabel12.Text" xml:space="preserve">
+    <value>View:</value>
+  </data>
+  <data name="metroLabel7.Text" xml:space="preserve">
+    <value>Ping:</value>
+  </data>
+  <data name="metroLabel6.Text" xml:space="preserve">
+    <value>Online:</value>
+  </data>
+  <data name="metroLabel5.Text" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="button_connect_namalsk.Text" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="page_settigns.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="button_aboutDEV.Text" xml:space="preserve">
+    <value>About the developer (launcher)</value>
+  </data>
+  <data name="button_aboutRM.Text" xml:space="preserve">
+    <value>About game servers</value>
+  </data>
+  <data name="button_appRestart.Text" xml:space="preserve">
+    <value>Forced reboot</value>
+  </data>
+  <data name="ComboBox_Style.Items" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="ComboBox_Style.Items1" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="ComboBox_Style.Items2" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="ComboBox_Style.ToolTip" xml:space="preserve">
+    <value>Launcher color style</value>
+  </data>
+  <data name="CheckBox_stats.Text" xml:space="preserve">
+    <value>Automatic statistics update</value>
+  </data>
+  <data name="CheckBox_stats.ToolTip" xml:space="preserve">
+    <value>Automatic statistics update (online, ping, online general, game status and steam)</value>
+  </data>
+  <data name="CheckBox_shutdown.Text" xml:space="preserve">
+    <value>Turn off launcher automatically</value>
+  </data>
+  <data name="CheckBox_shutdown.ToolTip" xml:space="preserve">
+    <value>Automatic shutdown of the launcher after joining the server</value>
+  </data>
+  <data name="CheckBox_updates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 15</value>
+  </data>
+  <data name="CheckBox_updates.Text" xml:space="preserve">
+    <value>Auto-updates</value>
+  </data>
+  <data name="CheckBox_updates.ToolTip" xml:space="preserve">
+    <value>Auto updates for launcher</value>
+  </data>
+  <data name="metroLabel39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="metroLabel39.Text" xml:space="preserve">
+    <value>Launcher settings</value>
+  </data>
+  <data name="CheckBox_batteye.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 15</value>
+  </data>
+  <data name="CheckBox_batteye.Text" xml:space="preserve">
+    <value>Skip anti-cheat (will not log into the server)</value>
+  </data>
+  <data name="CheckBox_batteye.ToolTip" xml:space="preserve">
+    <value>Doesn't start anti-cheat when starting the game, you won't be able to connect to the server</value>
+  </data>
+  <data name="CheckBox_priority.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 15</value>
+  </data>
+  <data name="CheckBox_priority.Text" xml:space="preserve">
+    <value>High priority</value>
+  </data>
+  <data name="CheckBox_priority.ToolTip" xml:space="preserve">
+    <value>Game launch option, launches the game in high priority mode</value>
+  </data>
+  <data name="CheckBox_windowmode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 15</value>
+  </data>
+  <data name="CheckBox_windowmode.Text" xml:space="preserve">
+    <value>Window mode</value>
+  </data>
+  <data name="CheckBox_windowmode.ToolTip" xml:space="preserve">
+    <value>Game launch option, launches the game in windowed mode</value>
+  </data>
+  <data name="metroLabel38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 19</value>
+  </data>
+  <data name="metroLabel38.Text" xml:space="preserve">
+    <value>Game settings</value>
+  </data>
+  <data name="page_about.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="label_help.Text" xml:space="preserve">
+    <value>Here you can see the basic information about the launcher, if you need more information, please contact our discord or directly to the launcher developer by clicking on this text.</value>
+  </data>
+  <data name="metroLabel3.Text" xml:space="preserve">
+    <value>All online</value>
+  </data>
+  <data name="Tile_stats.Text" xml:space="preserve">
+    <value>Statistics</value>
   </data>
 </root>

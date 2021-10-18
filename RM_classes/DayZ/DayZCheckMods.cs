@@ -4,7 +4,9 @@ namespace RMLauncher.RM_classes.DayZ
 {
     class DayZCheckMods
     {
-        public static string _pathMods = DayZPath.Locate() + "\\!Workshop\\";
+        public static string _pathModsWorkshop = DayZPath.Locate() + "\\!Workshop\\";
+
+        public static string _pathModsDZSA = DayZPath.Locate() + "\\!dzsal\\";
 
         public static string[] RM_namalsk = {
                                     "@Russian Mafia",
@@ -25,15 +27,15 @@ namespace RMLauncher.RM_classes.DayZ
                                     "@Ear-Plugs",
                                     "@Code Lock" };
 
-        public static bool IsInstalledCheck(byte ID)
+        public static bool IsDZSAModsCheck(byte ID)
         {
             switch (ID)
             {
                 case 1:
                     {
-                        for (int i = 0; i < RM_namalsk.Length; i++)
+                        for (int i = 0; i < RM_namalsk.Length;)
                         {
-                            if (Directory.Exists(_pathMods + RM_namalsk[i]))
+                            if (Directory.Exists(_pathModsDZSA + RM_namalsk[i]))
                                 return true;
                             else return false;
                         }
@@ -41,9 +43,37 @@ namespace RMLauncher.RM_classes.DayZ
                     }
                 case 2:
                     {
-                        for (int i = 0; i < RM_livoniaANDcherno.Length; i++)
+                        for (int i = 0; i < RM_livoniaANDcherno.Length;)
                         {
-                            if (Directory.Exists(_pathMods + RM_livoniaANDcherno[i]))
+                            if (Directory.Exists(_pathModsDZSA + RM_namalsk[i]))
+                                return true;
+                            else return false;
+                        }
+                        break;
+                    }
+            }
+            return false;
+        }
+
+        public static bool IsInstalledCheck(byte ID)
+        {
+            switch (ID)
+            {
+                case 1:
+                    {
+                        for (int i = 0; i < RM_namalsk.Length;)
+                        {
+                            if (Directory.Exists(_pathModsWorkshop + RM_namalsk[i]) || Directory.Exists(_pathModsDZSA + RM_namalsk[i]))
+                                return true;
+                            else return false;
+                        }
+                        break;
+                    }
+                case 2:
+                    {
+                        for (int i = 0; i < RM_livoniaANDcherno.Length;)
+                        {
+                            if (Directory.Exists(_pathModsWorkshop + RM_namalsk[i]) || Directory.Exists(_pathModsDZSA + RM_namalsk[i]))
                                 return true;
                             else return false;
                         }

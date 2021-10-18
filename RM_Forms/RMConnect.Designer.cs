@@ -44,7 +44,7 @@ namespace RMLauncher.RM_Forms
             // 
             // StyleManager
             // 
-            this.StyleManager.Owner = null;
+            this.StyleManager.Owner = this;
             this.StyleManager.Style = MetroFramework.MetroColorStyle.Red;
             this.StyleManager.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -94,6 +94,7 @@ namespace RMLauncher.RM_Forms
             this.MinimizeBox = false;
             this.Name = "RMConnect";
             this.Resizable = false;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "RMConnect";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;

@@ -118,12 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CheckBox_statistics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 15</value>
-  </data>
-  <data name="CheckBox_statistics.Text" xml:space="preserve">
-    <value>Сбор анонимной статистики</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA
@@ -993,5 +987,23 @@
         BUGKzSPbKty9opa0zZ6/iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI
         iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIjIe9b/AUYDUjCwZZr+AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="label_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 286</value>
+  </data>
+  <data name="label_help.Text" xml:space="preserve">
+    <value>Тут вы можете посмотреть основную информацию о лаунчере, если вам нужно больше информации, пожалуйста обратитесь в наш дискорд или напрямую к разработчику лаунчера, нажав на этот текст.</value>
+  </data>
+  <data name="button_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 296</value>
+  </data>
+  <data name="button_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
+  </data>
+  <data name="button_next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 296</value>
+  </data>
+  <data name="button_next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
   </data>
 </root>

@@ -140,12 +140,486 @@
   <metadata name="StyleManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>119, 2</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>956, 439</value>
+  </data>
+  <data name="tile_beta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 12</value>
+  </data>
+  <data name="tile_beta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 35</value>
+  </data>
+  <data name="tile_beta.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tile_beta.Text" xml:space="preserve">
+    <value>BETA</value>
+  </data>
+  <data name="tile_beta.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <metadata name="ToolTip_help.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>10, 37</value>
+  </metadata>
+  <data name="tile_beta.ToolTip" xml:space="preserve">
+    <value>This is a beta version of the launcher.</value>
+  </data>
+  <data name="&gt;&gt;tile_beta.Name" xml:space="preserve">
+    <value>tile_beta</value>
+  </data>
+  <data name="&gt;&gt;tile_beta.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;tile_beta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tile_beta.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TextBox_username.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 1</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TextBox_username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 267</value>
+  </data>
+  <data name="TextBox_username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="TextBox_username.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;TextBox_username.Name" xml:space="preserve">
+    <value>TextBox_username</value>
+  </data>
+  <data name="&gt;&gt;TextBox_username.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TextBox_username.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBox_username.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="metroLabel37.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="metroLabel37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 385</value>
+  </data>
+  <data name="metroLabel37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 22</value>
+  </data>
+  <data name="metroLabel37.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="metroLabel37.Text" xml:space="preserve">
+    <value>created by eas1ly</value>
+  </data>
+  <data name="metroLabel37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="metroLabel37.ToolTip" xml:space="preserve">
+    <value>DEVELOPER LAUNCHER</value>
+  </data>
+  <data name="&gt;&gt;metroLabel37.Name" xml:space="preserve">
+    <value>metroLabel37</value>
+  </data>
+  <data name="&gt;&gt;metroLabel37.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel37.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroLabel37.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_changeLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button_changeLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 327</value>
+  </data>
+  <data name="button_changeLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="button_changeLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_changeLanguage.Text" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="&gt;&gt;button_changeLanguage.Name" xml:space="preserve">
+    <value>button_changeLanguage</value>
+  </data>
+  <data name="&gt;&gt;button_changeLanguage.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;button_changeLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_changeLanguage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_checkMods.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button_checkMods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 356</value>
+  </data>
+  <data name="button_checkMods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="button_checkMods.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_checkMods.Text" xml:space="preserve">
+    <value>Проверить модификации</value>
+  </data>
+  <data name="&gt;&gt;button_checkMods.Name" xml:space="preserve">
+    <value>button_checkMods</value>
+  </data>
+  <data name="&gt;&gt;button_checkMods.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;button_checkMods.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_checkMods.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_updateStat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button_updateStat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 298</value>
+  </data>
+  <data name="button_updateStat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="button_updateStat.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_updateStat.Text" xml:space="preserve">
+    <value>Обновить статистику</value>
+  </data>
+  <data name="&gt;&gt;button_updateStat.Name" xml:space="preserve">
+    <value>button_updateStat</value>
+  </data>
+  <data name="&gt;&gt;button_updateStat.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;button_updateStat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_updateStat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel_right.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label_statusOnline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 134</value>
+  </data>
+  <data name="label_statusOnline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="label_statusOnline.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label_statusOnline.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_statusOnline.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label_statusOnline.Name" xml:space="preserve">
+    <value>label_statusOnline</value>
+  </data>
+  <data name="&gt;&gt;label_statusOnline.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;label_statusOnline.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;label_statusOnline.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_statusServers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 85</value>
+  </data>
+  <data name="label_statusServers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 22</value>
+  </data>
+  <data name="label_statusServers.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label_statusServers.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_statusServers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label_statusServers.Name" xml:space="preserve">
+    <value>label_statusServers</value>
+  </data>
+  <data name="&gt;&gt;label_statusServers.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;label_statusServers.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;label_statusServers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_statusSteam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 63</value>
+  </data>
+  <data name="label_statusSteam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 22</value>
+  </data>
+  <data name="label_statusSteam.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label_statusSteam.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_statusSteam.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label_statusSteam.Name" xml:space="preserve">
+    <value>label_statusSteam</value>
+  </data>
+  <data name="&gt;&gt;label_statusSteam.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;label_statusSteam.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;label_statusSteam.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_statusDayZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 41</value>
+  </data>
+  <data name="label_statusDayZ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 22</value>
+  </data>
+  <data name="label_statusDayZ.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label_statusDayZ.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_statusDayZ.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label_statusDayZ.Name" xml:space="preserve">
+    <value>label_statusDayZ</value>
+  </data>
+  <data name="&gt;&gt;label_statusDayZ.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;label_statusDayZ.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;label_statusDayZ.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="metroLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 85</value>
+  </data>
+  <data name="metroLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="metroLabel4.Text" xml:space="preserve">
+    <value>Servers:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel4.Name" xml:space="preserve">
+    <value>metroLabel4</value>
+  </data>
+  <data name="&gt;&gt;metroLabel4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel4.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;metroLabel4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="metroLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 134</value>
+  </data>
+  <data name="metroLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="metroLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="metroLabel3.Text" xml:space="preserve">
+    <value>Общий онлайн:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel3.Name" xml:space="preserve">
+    <value>metroLabel3</value>
+  </data>
+  <data name="&gt;&gt;metroLabel3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel3.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;metroLabel3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="metroLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="metroLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="metroLabel2.Text" xml:space="preserve">
+    <value>Steam:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel2.Name" xml:space="preserve">
+    <value>metroLabel2</value>
+  </data>
+  <data name="&gt;&gt;metroLabel2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel2.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;metroLabel2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 41</value>
+  </data>
+  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="metroLabel1.Text" xml:space="preserve">
+    <value>DayZ:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
+    <value>metroLabel1</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Tile_stats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Tile_stats.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tile_stats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Tile_stats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 38</value>
+  </data>
+  <data name="Tile_stats.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Tile_stats.Text" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="&gt;&gt;Tile_stats.Name" xml:space="preserve">
+    <value>Tile_stats</value>
+  </data>
+  <data name="&gt;&gt;Tile_stats.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Tile_stats.Parent" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;Tile_stats.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panel_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 98</value>
+  </data>
+  <data name="panel_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 162</value>
+  </data>
+  <data name="panel_right.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Name" xml:space="preserve">
+    <value>panel_right</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panel_right.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_right.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="tab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="panel_main.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label_cherno2_pp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="label_cherno2_pp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 171</value>
+  </data>
+  <data name="label_cherno2_pp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="label_cherno2_pp.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label_cherno2_pp.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_cherno2_pp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;label_cherno2_pp.Name" xml:space="preserve">
     <value>label_cherno2_pp</value>
@@ -159,6 +633,21 @@
   <data name="&gt;&gt;label_cherno2_pp.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="metroLabel30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="metroLabel30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 171</value>
+  </data>
+  <data name="metroLabel30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel30.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="metroLabel30.Text" xml:space="preserve">
+    <value>Вид:</value>
+  </data>
   <data name="&gt;&gt;metroLabel30.Name" xml:space="preserve">
     <value>metroLabel30</value>
   </data>
@@ -170,6 +659,24 @@
   </data>
   <data name="&gt;&gt;metroLabel30.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="label_cherno2_ping.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="label_cherno2_ping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 215</value>
+  </data>
+  <data name="label_cherno2_ping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="label_cherno2_ping.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label_cherno2_ping.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_cherno2_ping.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;label_cherno2_ping.Name" xml:space="preserve">
     <value>label_cherno2_ping</value>
@@ -183,6 +690,24 @@
   <data name="&gt;&gt;label_cherno2_ping.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="label_cherno2_online.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="label_cherno2_online.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 193</value>
+  </data>
+  <data name="label_cherno2_online.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="label_cherno2_online.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label_cherno2_online.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_cherno2_online.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
   <data name="&gt;&gt;label_cherno2_online.Name" xml:space="preserve">
     <value>label_cherno2_online</value>
   </data>
@@ -194,6 +719,24 @@
   </data>
   <data name="&gt;&gt;label_cherno2_online.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="label_cherno2_map.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label_cherno2_map.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 137</value>
+  </data>
+  <data name="label_cherno2_map.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="label_cherno2_map.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label_cherno2_map.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="label_cherno2_map.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;label_cherno2_map.Name" xml:space="preserve">
     <value>label_cherno2_map</value>
@@ -207,6 +750,21 @@
   <data name="&gt;&gt;label_cherno2_map.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="pictureBox_cherno2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pictureBox_cherno2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_cherno2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 44</value>
+  </data>
+  <data name="pictureBox_cherno2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 85</value>
+  </data>
+  <data name="pictureBox_cherno2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
   <data name="&gt;&gt;pictureBox_cherno2.Name" xml:space="preserve">
     <value>pictureBox_cherno2</value>
   </data>
@@ -218,6 +776,21 @@
   </data>
   <data name="&gt;&gt;pictureBox_cherno2.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="metroLabel34.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="metroLabel34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 215</value>
+  </data>
+  <data name="metroLabel34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel34.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="metroLabel34.Text" xml:space="preserve">
+    <value>Пинг</value>
   </data>
   <data name="&gt;&gt;metroLabel34.Name" xml:space="preserve">
     <value>metroLabel34</value>
@@ -231,6 +804,21 @@
   <data name="&gt;&gt;metroLabel34.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="metroLabel35.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="metroLabel35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 193</value>
+  </data>
+  <data name="metroLabel35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel35.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="metroLabel35.Text" xml:space="preserve">
+    <value>Онлайн:</value>
+  </data>
   <data name="&gt;&gt;metroLabel35.Name" xml:space="preserve">
     <value>metroLabel35</value>
   </data>
@@ -242,6 +830,21 @@
   </data>
   <data name="&gt;&gt;metroLabel35.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="metroLabel36.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="metroLabel36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 137</value>
+  </data>
+  <data name="metroLabel36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="metroLabel36.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="metroLabel36.Text" xml:space="preserve">
+    <value>Карта:</value>
   </data>
   <data name="&gt;&gt;metroLabel36.Name" xml:space="preserve">
     <value>metroLabel36</value>
@@ -255,6 +858,24 @@
   <data name="&gt;&gt;metroLabel36.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="button_connect_cherno2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="button_connect_cherno2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_connect_cherno2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 238</value>
+  </data>
+  <data name="button_connect_cherno2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 29</value>
+  </data>
+  <data name="button_connect_cherno2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_connect_cherno2.Text" xml:space="preserve">
+    <value>Присоединиться</value>
+  </data>
   <data name="&gt;&gt;button_connect_cherno2.Name" xml:space="preserve">
     <value>button_connect_cherno2</value>
   </data>
@@ -266,6 +887,27 @@
   </data>
   <data name="&gt;&gt;button_connect_cherno2.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="Tile_server4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Tile_server4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tile_server4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Tile_server4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="Tile_server4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Tile_server4.Text" xml:space="preserve">
+    <value>Chernorus #2</value>
+  </data>
+  <data name="Tile_server4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;Tile_server4.Name" xml:space="preserve">
     <value>Tile_server4</value>
@@ -639,939 +1281,6 @@
   <data name="&gt;&gt;metroPanel3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label_livonia_pp.Name" xml:space="preserve">
-    <value>label_livonia_pp</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_pp.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_pp.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_pp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel14.Name" xml:space="preserve">
-    <value>metroLabel14</value>
-  </data>
-  <data name="&gt;&gt;metroLabel14.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel14.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel14.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_ping.Name" xml:space="preserve">
-    <value>label_livonia_ping</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_ping.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_ping.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_ping.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_online.Name" xml:space="preserve">
-    <value>label_livonia_online</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_online.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_online.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_online.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_map.Name" xml:space="preserve">
-    <value>label_livonia_map</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_map.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_map.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;label_livonia_map.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;metroLabel18.Name" xml:space="preserve">
-    <value>metroLabel18</value>
-  </data>
-  <data name="&gt;&gt;metroLabel18.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel18.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel18.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;metroLabel19.Name" xml:space="preserve">
-    <value>metroLabel19</value>
-  </data>
-  <data name="&gt;&gt;metroLabel19.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel19.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel19.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;metroLabel20.Name" xml:space="preserve">
-    <value>metroLabel20</value>
-  </data>
-  <data name="&gt;&gt;metroLabel20.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel20.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel20.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;button_connect_livonia.Name" xml:space="preserve">
-    <value>button_connect_livonia</value>
-  </data>
-  <data name="&gt;&gt;button_connect_livonia.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_connect_livonia.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;button_connect_livonia.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Tile_server2.Name" xml:space="preserve">
-    <value>Tile_server2</value>
-  </data>
-  <data name="&gt;&gt;Tile_server2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_server2.Parent" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;Tile_server2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>579, 60</value>
-  </data>
-  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 267</value>
-  </data>
-  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metroPanel2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
-    <value>metroPanel2</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
-    <value>panel_main</value>
-  </data>
-  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Tile_servers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="Tile_servers.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Tile_servers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 11</value>
-  </data>
-  <data name="Tile_servers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>747, 38</value>
-  </data>
-  <data name="Tile_servers.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Tile_servers.Text" xml:space="preserve">
-    <value>Сервера</value>
-  </data>
-  <data name="Tile_servers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;Tile_servers.Name" xml:space="preserve">
-    <value>Tile_servers</value>
-  </data>
-  <data name="&gt;&gt;Tile_servers.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_servers.Parent" xml:space="preserve">
-    <value>panel_main</value>
-  </data>
-  <data name="&gt;&gt;Tile_servers.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_pp.Name" xml:space="preserve">
-    <value>label_namalsk_pp</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_pp.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_pp.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_pp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel12.Name" xml:space="preserve">
-    <value>metroLabel12</value>
-  </data>
-  <data name="&gt;&gt;metroLabel12.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel12.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel12.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_ping.Name" xml:space="preserve">
-    <value>label_namalsk_ping</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_ping.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_ping.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_ping.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_online.Name" xml:space="preserve">
-    <value>label_namalsk_online</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_online.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_online.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_online.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_map.Name" xml:space="preserve">
-    <value>label_namalsk_map</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_map.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_map.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;label_namalsk_map.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_namalsk.Name" xml:space="preserve">
-    <value>pictureBox_namalsk</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_namalsk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_namalsk.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_namalsk.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;metroLabel7.Name" xml:space="preserve">
-    <value>metroLabel7</value>
-  </data>
-  <data name="&gt;&gt;metroLabel7.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel7.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel7.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;metroLabel6.Name" xml:space="preserve">
-    <value>metroLabel6</value>
-  </data>
-  <data name="&gt;&gt;metroLabel6.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel6.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel6.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;metroLabel5.Name" xml:space="preserve">
-    <value>metroLabel5</value>
-  </data>
-  <data name="&gt;&gt;metroLabel5.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel5.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel5.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;button_connect_namalsk.Name" xml:space="preserve">
-    <value>button_connect_namalsk</value>
-  </data>
-  <data name="&gt;&gt;button_connect_namalsk.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_connect_namalsk.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;button_connect_namalsk.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Tile_server1.Name" xml:space="preserve">
-    <value>Tile_server1</value>
-  </data>
-  <data name="&gt;&gt;Tile_server1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_server1.Parent" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;Tile_server1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 60</value>
-  </data>
-  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 267</value>
-  </data>
-  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
-    <value>metroPanel1</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
-    <value>panel_main</value>
-  </data>
-  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="panel_main.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel_main.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
-  </data>
-  <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_main.Name" xml:space="preserve">
-    <value>panel_main</value>
-  </data>
-  <data name="&gt;&gt;panel_main.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;panel_main.Parent" xml:space="preserve">
-    <value>page_main</value>
-  </data>
-  <data name="&gt;&gt;panel_main.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="page_main.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="page_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
-  </data>
-  <data name="page_main.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="page_main.Text" xml:space="preserve">
-    <value>Главная</value>
-  </data>
-  <data name="&gt;&gt;page_main.Name" xml:space="preserve">
-    <value>page_main</value>
-  </data>
-  <data name="&gt;&gt;page_main.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;page_main.Parent" xml:space="preserve">
-    <value>tab</value>
-  </data>
-  <data name="&gt;&gt;page_main.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_aboutDEV.Name" xml:space="preserve">
-    <value>button_aboutDEV</value>
-  </data>
-  <data name="&gt;&gt;button_aboutDEV.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_aboutDEV.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;button_aboutDEV.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_aboutRM.Name" xml:space="preserve">
-    <value>button_aboutRM</value>
-  </data>
-  <data name="&gt;&gt;button_aboutRM.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_aboutRM.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;button_aboutRM.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_appRestart.Name" xml:space="preserve">
-    <value>button_appRestart</value>
-  </data>
-  <data name="&gt;&gt;button_appRestart.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_appRestart.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;button_appRestart.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ComboBox_Style.Name" xml:space="preserve">
-    <value>ComboBox_Style</value>
-  </data>
-  <data name="&gt;&gt;ComboBox_Style.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;ComboBox_Style.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;ComboBox_Style.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_stats.Name" xml:space="preserve">
-    <value>CheckBox_stats</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_stats.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_stats.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_stats.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_shutdown.Name" xml:space="preserve">
-    <value>CheckBox_shutdown</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_shutdown.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_shutdown.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_shutdown.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_updates.Name" xml:space="preserve">
-    <value>CheckBox_updates</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_updates.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_updates.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_updates.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;metroLabel39.Name" xml:space="preserve">
-    <value>metroLabel39</value>
-  </data>
-  <data name="&gt;&gt;metroLabel39.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel39.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;metroLabel39.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_batteye.Name" xml:space="preserve">
-    <value>CheckBox_batteye</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_batteye.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_batteye.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_batteye.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_priority.Name" xml:space="preserve">
-    <value>CheckBox_priority</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_priority.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_priority.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_priority.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_windowmode.Name" xml:space="preserve">
-    <value>CheckBox_windowmode</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_windowmode.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_windowmode.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;CheckBox_windowmode.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;metroLabel38.Name" xml:space="preserve">
-    <value>metroLabel38</value>
-  </data>
-  <data name="&gt;&gt;metroLabel38.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel38.Parent" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;metroLabel38.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="page_settigns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="page_settigns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
-  </data>
-  <data name="page_settigns.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="page_settigns.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="&gt;&gt;page_settigns.Name" xml:space="preserve">
-    <value>page_settigns</value>
-  </data>
-  <data name="&gt;&gt;page_settigns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;page_settigns.Parent" xml:space="preserve">
-    <value>tab</value>
-  </data>
-  <data name="&gt;&gt;page_settigns.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_info.Name" xml:space="preserve">
-    <value>panel_info</value>
-  </data>
-  <data name="&gt;&gt;panel_info.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;panel_info.Parent" xml:space="preserve">
-    <value>page_about</value>
-  </data>
-  <data name="&gt;&gt;panel_info.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="page_about.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
-  </data>
-  <data name="page_about.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
-  </data>
-  <data name="page_about.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="page_about.Text" xml:space="preserve">
-    <value>Помощь</value>
-  </data>
-  <data name="&gt;&gt;page_about.Name" xml:space="preserve">
-    <value>page_about</value>
-  </data>
-  <data name="&gt;&gt;page_about.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;page_about.Parent" xml:space="preserve">
-    <value>tab</value>
-  </data>
-  <data name="&gt;&gt;page_about.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 63</value>
-  </data>
-  <data name="tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>777, 372</value>
-  </data>
-  <data name="tab.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tab.Name" xml:space="preserve">
-    <value>tab</value>
-  </data>
-  <data name="&gt;&gt;tab.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;tab.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tab.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label_cherno2_pp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="label_cherno2_pp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 171</value>
-  </data>
-  <data name="label_cherno2_pp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 22</value>
-  </data>
-  <data name="label_cherno2_pp.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label_cherno2_pp.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_cherno2_pp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_pp.Name" xml:space="preserve">
-    <value>label_cherno2_pp</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_pp.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_pp.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_pp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="metroLabel30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="metroLabel30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 171</value>
-  </data>
-  <data name="metroLabel30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel30.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="metroLabel30.Text" xml:space="preserve">
-    <value>Вид:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel30.Name" xml:space="preserve">
-    <value>metroLabel30</value>
-  </data>
-  <data name="&gt;&gt;metroLabel30.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel30.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel30.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label_cherno2_ping.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="label_cherno2_ping.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 215</value>
-  </data>
-  <data name="label_cherno2_ping.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 22</value>
-  </data>
-  <data name="label_cherno2_ping.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="label_cherno2_ping.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_cherno2_ping.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_ping.Name" xml:space="preserve">
-    <value>label_cherno2_ping</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_ping.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_ping.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_ping.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label_cherno2_online.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="label_cherno2_online.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 193</value>
-  </data>
-  <data name="label_cherno2_online.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 22</value>
-  </data>
-  <data name="label_cherno2_online.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label_cherno2_online.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_cherno2_online.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_online.Name" xml:space="preserve">
-    <value>label_cherno2_online</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_online.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_online.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_online.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label_cherno2_map.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="label_cherno2_map.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 137</value>
-  </data>
-  <data name="label_cherno2_map.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 22</value>
-  </data>
-  <data name="label_cherno2_map.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label_cherno2_map.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_cherno2_map.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_map.Name" xml:space="preserve">
-    <value>label_cherno2_map</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_map.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_map.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;label_cherno2_map.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="pictureBox_cherno2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="pictureBox_cherno2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox_cherno2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 44</value>
-  </data>
-  <data name="pictureBox_cherno2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 85</value>
-  </data>
-  <data name="pictureBox_cherno2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_cherno2.Name" xml:space="preserve">
-    <value>pictureBox_cherno2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_cherno2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_cherno2.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox_cherno2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="metroLabel34.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="metroLabel34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 215</value>
-  </data>
-  <data name="metroLabel34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel34.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="metroLabel34.Text" xml:space="preserve">
-    <value>Пинг</value>
-  </data>
-  <data name="&gt;&gt;metroLabel34.Name" xml:space="preserve">
-    <value>metroLabel34</value>
-  </data>
-  <data name="&gt;&gt;metroLabel34.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel34.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel34.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="metroLabel35.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="metroLabel35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 193</value>
-  </data>
-  <data name="metroLabel35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel35.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="metroLabel35.Text" xml:space="preserve">
-    <value>Онлайн:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel35.Name" xml:space="preserve">
-    <value>metroLabel35</value>
-  </data>
-  <data name="&gt;&gt;metroLabel35.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel35.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel35.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="metroLabel36.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="metroLabel36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 137</value>
-  </data>
-  <data name="metroLabel36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel36.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="metroLabel36.Text" xml:space="preserve">
-    <value>Карта:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel36.Name" xml:space="preserve">
-    <value>metroLabel36</value>
-  </data>
-  <data name="&gt;&gt;metroLabel36.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel36.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel36.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="button_connect_cherno2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="button_connect_cherno2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button_connect_cherno2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 238</value>
-  </data>
-  <data name="button_connect_cherno2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 29</value>
-  </data>
-  <data name="button_connect_cherno2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button_connect_cherno2.Text" xml:space="preserve">
-    <value>Присоединиться</value>
-  </data>
-  <data name="&gt;&gt;button_connect_cherno2.Name" xml:space="preserve">
-    <value>button_connect_cherno2</value>
-  </data>
-  <data name="&gt;&gt;button_connect_cherno2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_connect_cherno2.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;button_connect_cherno2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="Tile_server4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Tile_server4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Tile_server4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Tile_server4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 38</value>
-  </data>
-  <data name="Tile_server4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Tile_server4.Text" xml:space="preserve">
-    <value>Chernorus #2</value>
-  </data>
-  <data name="Tile_server4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;Tile_server4.Name" xml:space="preserve">
-    <value>Tile_server4</value>
-  </data>
-  <data name="&gt;&gt;Tile_server4.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_server4.Parent" xml:space="preserve">
-    <value>metroPanel4</value>
-  </data>
-  <data name="&gt;&gt;Tile_server4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="label_livonia_pp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
@@ -1889,6 +1598,63 @@
   </data>
   <data name="&gt;&gt;Tile_server2.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 60</value>
+  </data>
+  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 267</value>
+  </data>
+  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="metroPanel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Tile_servers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="Tile_servers.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Tile_servers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 11</value>
+  </data>
+  <data name="Tile_servers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 38</value>
+  </data>
+  <data name="Tile_servers.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Tile_servers.Text" xml:space="preserve">
+    <value>Сервера</value>
+  </data>
+  <data name="Tile_servers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Tile_servers.Name" xml:space="preserve">
+    <value>Tile_servers</value>
+  </data>
+  <data name="&gt;&gt;Tile_servers.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Tile_servers.Parent" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;Tile_servers.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label_namalsk_pp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -2208,11 +1974,80 @@
   <data name="&gt;&gt;Tile_server1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 60</value>
+  </data>
+  <data name="metroPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 267</value>
+  </data>
+  <data name="metroPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Name" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.Parent" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;metroPanel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel_main.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 330</value>
+  </data>
+  <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Name" xml:space="preserve">
+    <value>panel_main</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panel_main.Parent" xml:space="preserve">
+    <value>page_main</value>
+  </data>
+  <data name="&gt;&gt;panel_main.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="page_main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="page_main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 330</value>
+  </data>
+  <data name="page_main.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="page_main.Text" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="&gt;&gt;page_main.Name" xml:space="preserve">
+    <value>page_main</value>
+  </data>
+  <data name="&gt;&gt;page_main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;page_main.Parent" xml:space="preserve">
+    <value>tab</value>
+  </data>
+  <data name="&gt;&gt;page_main.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="button_aboutDEV.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 298</value>
   </data>
   <data name="button_aboutDEV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 23</value>
+    <value>285, 23</value>
   </data>
   <data name="button_aboutDEV.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2236,7 +2071,7 @@
     <value>30, 270</value>
   </data>
   <data name="button_aboutRM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 23</value>
+    <value>285, 23</value>
   </data>
   <data name="button_aboutRM.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2260,7 +2095,7 @@
     <value>30, 242</value>
   </data>
   <data name="button_appRestart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 23</value>
+    <value>285, 23</value>
   </data>
   <data name="button_appRestart.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2296,7 +2131,7 @@
     <value>30, 206</value>
   </data>
   <data name="ComboBox_Style.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 29</value>
+    <value>285, 29</value>
   </data>
   <data name="ComboBox_Style.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2313,14 +2148,11 @@
   <data name="&gt;&gt;ComboBox_Style.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="CheckBox_stats.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_stats.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 182</value>
   </data>
   <data name="CheckBox_stats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 15</value>
+    <value>285, 15</value>
   </data>
   <data name="CheckBox_stats.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2340,14 +2172,11 @@
   <data name="&gt;&gt;CheckBox_stats.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="CheckBox_shutdown.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_shutdown.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 162</value>
   </data>
   <data name="CheckBox_shutdown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 15</value>
+    <value>285, 15</value>
   </data>
   <data name="CheckBox_shutdown.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2367,14 +2196,11 @@
   <data name="&gt;&gt;CheckBox_shutdown.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="CheckBox_updates.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_updates.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 142</value>
   </data>
   <data name="CheckBox_updates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 15</value>
+    <value>285, 15</value>
   </data>
   <data name="CheckBox_updates.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2421,9 +2247,6 @@
   <data name="&gt;&gt;metroLabel39.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="CheckBox_batteye.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_batteye.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -2431,7 +2254,7 @@
     <value>31, 84</value>
   </data>
   <data name="CheckBox_batteye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 15</value>
+    <value>284, 15</value>
   </data>
   <data name="CheckBox_batteye.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2451,14 +2274,11 @@
   <data name="&gt;&gt;CheckBox_batteye.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="CheckBox_priority.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_priority.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 64</value>
   </data>
   <data name="CheckBox_priority.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 15</value>
+    <value>284, 15</value>
   </data>
   <data name="CheckBox_priority.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2478,14 +2298,11 @@
   <data name="&gt;&gt;CheckBox_priority.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="CheckBox_windowmode.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="CheckBox_windowmode.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 44</value>
   </data>
   <data name="CheckBox_windowmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 15</value>
+    <value>284, 15</value>
   </data>
   <data name="CheckBox_windowmode.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2532,17 +2349,143 @@
   <data name="&gt;&gt;metroLabel38.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;label_info.Name" xml:space="preserve">
-    <value>label_info</value>
+  <data name="page_settigns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
   </data>
-  <data name="&gt;&gt;label_info.Type" xml:space="preserve">
+  <data name="page_settigns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 330</value>
+  </data>
+  <data name="page_settigns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="page_settigns.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="&gt;&gt;page_settigns.Name" xml:space="preserve">
+    <value>page_settigns</value>
+  </data>
+  <data name="&gt;&gt;page_settigns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;page_settigns.Parent" xml:space="preserve">
+    <value>tab</value>
+  </data>
+  <data name="&gt;&gt;page_settigns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_help.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label_help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 7</value>
+  </data>
+  <data name="label_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 286</value>
+  </data>
+  <data name="label_help.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label_help.Text" xml:space="preserve">
+    <value>Тут вы можете посмотреть основную информацию о лаунчере, если вам нужно больше информации, пожалуйста обратитесь в наш дискорд или напрямую к разработчику лаунчера, нажав на этот текст.</value>
+  </data>
+  <data name="&gt;&gt;label_help.Name" xml:space="preserve">
+    <value>label_help</value>
+  </data>
+  <data name="&gt;&gt;label_help.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;label_info.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_help.Parent" xml:space="preserve">
     <value>panel_info</value>
   </data>
-  <data name="&gt;&gt;label_info.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_help.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="pb_help.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="pb_help.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
+  </data>
+  <data name="pb_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 316</value>
+  </data>
+  <data name="pb_help.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pb_help.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pb_help.Name" xml:space="preserve">
+    <value>pb_help</value>
+  </data>
+  <data name="&gt;&gt;pb_help.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_help.Parent" xml:space="preserve">
+    <value>panel_info</value>
+  </data>
+  <data name="&gt;&gt;pb_help.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_back.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="button_back.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 296</value>
+  </data>
+  <data name="button_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
+  </data>
+  <data name="button_back.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_back.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;button_back.Name" xml:space="preserve">
+    <value>button_back</value>
+  </data>
+  <data name="&gt;&gt;button_back.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;button_back.Parent" xml:space="preserve">
+    <value>panel_info</value>
+  </data>
+  <data name="&gt;&gt;button_back.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_next.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="button_next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 296</value>
+  </data>
+  <data name="button_next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
+  </data>
+  <data name="button_next.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_next.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;button_next.Name" xml:space="preserve">
+    <value>button_next</value>
+  </data>
+  <data name="&gt;&gt;button_next.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;button_next.Parent" xml:space="preserve">
+    <value>panel_info</value>
+  </data>
+  <data name="&gt;&gt;button_next.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="panel_info.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2568,605 +2511,50 @@
   <data name="&gt;&gt;panel_info.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label_info.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
+  <data name="page_about.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
   </data>
-  <data name="label_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>614, 361</value>
+  <data name="page_about.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 330</value>
   </data>
-  <data name="label_info.TabIndex" type="System.Int32, mscorlib">
+  <data name="page_about.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label_info.Text" xml:space="preserve">
-    <value>Тут будет информация</value>
+  <data name="page_about.Text" xml:space="preserve">
+    <value>Помощь</value>
   </data>
-  <data name="&gt;&gt;label_info.Name" xml:space="preserve">
-    <value>label_info</value>
+  <data name="&gt;&gt;page_about.Name" xml:space="preserve">
+    <value>page_about</value>
   </data>
-  <data name="&gt;&gt;label_info.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;page_about.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_info.Parent" xml:space="preserve">
-    <value>panel_info</value>
+  <data name="&gt;&gt;page_about.Parent" xml:space="preserve">
+    <value>tab</value>
   </data>
-  <data name="&gt;&gt;label_info.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;page_about.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_right.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="tab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 63</value>
   </data>
-  <data name="&gt;&gt;label_statusOnline.Name" xml:space="preserve">
-    <value>label_statusOnline</value>
+  <data name="tab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>777, 372</value>
   </data>
-  <data name="&gt;&gt;label_statusOnline.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Name" xml:space="preserve">
-    <value>label_statusServers</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Name" xml:space="preserve">
-    <value>label_statusSteam</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Name" xml:space="preserve">
-    <value>label_statusDayZ</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Name" xml:space="preserve">
-    <value>metroLabel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Name" xml:space="preserve">
-    <value>metroLabel3</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Name" xml:space="preserve">
-    <value>metroLabel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Name" xml:space="preserve">
-    <value>Tile_stats</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="panel_right.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 98</value>
-  </data>
-  <data name="panel_right.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 162</value>
-  </data>
-  <data name="panel_right.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_right.Name" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;panel_right.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;panel_right.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_right.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label_statusOnline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 134</value>
-  </data>
-  <data name="label_statusOnline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 22</value>
-  </data>
-  <data name="label_statusOnline.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label_statusOnline.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_statusOnline.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.Name" xml:space="preserve">
-    <value>label_statusOnline</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusOnline.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label_statusServers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 85</value>
-  </data>
-  <data name="label_statusServers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="label_statusServers.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label_statusServers.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_statusServers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Name" xml:space="preserve">
-    <value>label_statusServers</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusServers.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label_statusSteam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 63</value>
-  </data>
-  <data name="label_statusSteam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="label_statusSteam.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label_statusSteam.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_statusSteam.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Name" xml:space="preserve">
-    <value>label_statusSteam</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusSteam.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label_statusDayZ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 41</value>
-  </data>
-  <data name="label_statusDayZ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="label_statusDayZ.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label_statusDayZ.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="label_statusDayZ.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Name" xml:space="preserve">
-    <value>label_statusDayZ</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;label_statusDayZ.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="metroLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 85</value>
-  </data>
-  <data name="metroLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="metroLabel4.Text" xml:space="preserve">
-    <value>Servers:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Name" xml:space="preserve">
-    <value>metroLabel4</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="metroLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 134</value>
-  </data>
-  <data name="metroLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 22</value>
-  </data>
-  <data name="metroLabel3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="metroLabel3.Text" xml:space="preserve">
-    <value>Общий онлайн:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Name" xml:space="preserve">
-    <value>metroLabel3</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="metroLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 63</value>
-  </data>
-  <data name="metroLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metroLabel2.Text" xml:space="preserve">
-    <value>Steam:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Name" xml:space="preserve">
-    <value>metroLabel2</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 41</value>
-  </data>
-  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="metroLabel1.Text" xml:space="preserve">
-    <value>DayZ:</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="Tile_stats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Tile_stats.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Tile_stats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Tile_stats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 38</value>
-  </data>
-  <data name="Tile_stats.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Tile_stats.Text" xml:space="preserve">
-    <value>Статистика</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Name" xml:space="preserve">
-    <value>Tile_stats</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.Parent" xml:space="preserve">
-    <value>panel_right</value>
-  </data>
-  <data name="&gt;&gt;Tile_stats.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="button_updateStat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="button_updateStat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 298</value>
-  </data>
-  <data name="button_updateStat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 23</value>
-  </data>
-  <data name="button_updateStat.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button_updateStat.Text" xml:space="preserve">
-    <value>Обновить статистику</value>
-  </data>
-  <data name="&gt;&gt;button_updateStat.Name" xml:space="preserve">
-    <value>button_updateStat</value>
-  </data>
-  <data name="&gt;&gt;button_updateStat.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_updateStat.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_updateStat.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="button_checkMods.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="button_checkMods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 356</value>
-  </data>
-  <data name="button_checkMods.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 23</value>
-  </data>
-  <data name="button_checkMods.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button_checkMods.Text" xml:space="preserve">
-    <value>Проверить модификации</value>
-  </data>
-  <data name="&gt;&gt;button_checkMods.Name" xml:space="preserve">
-    <value>button_checkMods</value>
-  </data>
-  <data name="&gt;&gt;button_checkMods.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_checkMods.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_checkMods.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="ToolTip_help.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>10, 37</value>
-  </metadata>
-  <data name="metroLabel37.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="metroLabel37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 385</value>
-  </data>
-  <data name="metroLabel37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 22</value>
-  </data>
-  <data name="metroLabel37.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="metroLabel37.Text" xml:space="preserve">
-    <value>created by eas1ly</value>
-  </data>
-  <data name="metroLabel37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="metroLabel37.ToolTip" xml:space="preserve">
-    <value>DEVELOPER LAUNCHER</value>
-  </data>
-  <data name="&gt;&gt;metroLabel37.Name" xml:space="preserve">
-    <value>metroLabel37</value>
-  </data>
-  <data name="&gt;&gt;metroLabel37.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel37.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;metroLabel37.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button_changeLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="button_changeLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 327</value>
-  </data>
-  <data name="button_changeLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 23</value>
-  </data>
-  <data name="button_changeLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button_changeLanguage.Text" xml:space="preserve">
-    <value>Change language</value>
-  </data>
-  <data name="&gt;&gt;button_changeLanguage.Name" xml:space="preserve">
-    <value>button_changeLanguage</value>
-  </data>
-  <data name="&gt;&gt;button_changeLanguage.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;button_changeLanguage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_changeLanguage.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="updateOnline.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>395, 3</value>
-  </metadata>
-  <metadata name="updatePing.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>511, 2</value>
-  </metadata>
-  <metadata name="updateStats.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>292, 2</value>
-  </metadata>
-  <data name="TextBox_username.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 1</value>
-  </data>
-  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 21</value>
-  </data>
-  <data name="resource.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TextBox_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 267</value>
-  </data>
-  <data name="TextBox_username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 23</value>
-  </data>
-  <data name="TextBox_username.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;TextBox_username.Name" xml:space="preserve">
-    <value>TextBox_username</value>
-  </data>
-  <data name="&gt;&gt;TextBox_username.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TextBox_username.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBox_username.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tile_beta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 12</value>
-  </data>
-  <data name="tile_beta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 35</value>
-  </data>
-  <data name="tile_beta.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="tile_beta.Text" xml:space="preserve">
-    <value>BETA</value>
-  </data>
-  <data name="tile_beta.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <metadata name="ToolTip_help.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>10, 37</value>
-  </metadata>
-  <data name="tile_beta.ToolTip" xml:space="preserve">
-    <value>This is a beta version of the launcher.</value>
-  </data>
-  <data name="&gt;&gt;tile_beta.Name" xml:space="preserve">
-    <value>tile_beta</value>
-  </data>
-  <data name="&gt;&gt;tile_beta.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;tile_beta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tile_beta.ZOrder" xml:space="preserve">
+  <data name="tab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;tab.Name" xml:space="preserve">
+    <value>tab</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>956, 439</value>
+  <data name="&gt;&gt;tab.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;tab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tab.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3442,22 +2830,10 @@
   <data name="&gt;&gt;StyleManager.Type" xml:space="preserve">
     <value>MetroFramework.Components.MetroStyleManager, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;updateOnline.Name" xml:space="preserve">
-    <value>updateOnline</value>
+  <data name="&gt;&gt;update.Name" xml:space="preserve">
+    <value>update</value>
   </data>
-  <data name="&gt;&gt;updateOnline.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;updatePing.Name" xml:space="preserve">
-    <value>updatePing</value>
-  </data>
-  <data name="&gt;&gt;updatePing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;updateStats.Name" xml:space="preserve">
-    <value>updateStats</value>
-  </data>
-  <data name="&gt;&gt;updateStats.Type" xml:space="preserve">
+  <data name="&gt;&gt;update.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolTip_help.Name" xml:space="preserve">
@@ -3472,4 +2848,7 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
+  <metadata name="update.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>292, 2</value>
+  </metadata>
 </root>
