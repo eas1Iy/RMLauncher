@@ -2,9 +2,11 @@
 using RMLauncher.Properties;
 using RMLauncher.RM_classes;
 using RMLauncher.RM_classes.DayZ;
+using RMLauncher.RM_classes.Discord;
 using RMLauncher.RM_Forms;
 using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,6 +19,7 @@ namespace RMLauncher
         #region Загрузка и переменные
 
         GetServersInformation getInfo;
+        Discord Discord;
         //CheckOthersStats getStats;
 
         public bool ru;
@@ -35,7 +38,10 @@ namespace RMLauncher
             try
             {
                 getInfo = new GetServersInformation();
+                Discord = new Discord();
+
                 await Task.Delay(200);
+                Discord.Initialize("Main menu","Waiting...");
                 LoadSettings();
                 await Task.Delay(200);
                 StatsChange();
@@ -98,56 +104,76 @@ namespace RMLauncher
         #region Главная
         void button_connect_namalsk_Click(object sender, EventArgs e)
         {
+            button_connect_namalsk.Enabled = false;
             GameStart(1);
+            
+            Discord.JoinServer("Russian Mafia | Namalsk");
+
+            button_connect_namalsk.Enabled = true;
         }
 
         void button_connect_livonia_Click(object sender, EventArgs e)
         {
-
+            button_connect_livonia.Enabled = false;
         }
 
         void button_connect_cherno1_Click(object sender, EventArgs e)
         {
+            button_connect_cherno1.Enabled = false;
+
             GameStart(2);
+
+            Discord.JoinServer("Russian Mafia | Chernarussia #1");
+
+            button_connect_cherno1.Enabled = true;
         }
 
         void button_connect_cherno2_Click(object sender, EventArgs e)
         {
-
+            button_connect_cherno2.Enabled = false;
         }
 
         public bool GameStart(byte serverID)
         {
             SaveSettings();
-            if (DayZLaunch.GameStart(serverID) == true)
+            if (TextBox_username.Text.Length > 3 || TextBox_username.Text == "Survivor" || TextBox_username.Text == "Выживший")
             {
-                this.WindowState = FormWindowState.Minimized;
-                Alert("Success game start", RMNotification.enmType.Success);
+                if (DayZLaunch.GameStart(serverID) == true)
+                {
+                    this.WindowState = FormWindowState.Minimized;
+                    Alert("Success game start", RMNotification.enmType.Success);
 
-                if (CheckBox_shutdown.Checked == true)
-                    Application.Exit();
+                    if (CheckBox_shutdown.Checked == true)
+                        Application.Exit();
 
-                return true;
+                    return true;
+                }
+                else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
             }
-            else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
-
+            else { MetroMessageBox.Show(this, "Please change your nickname.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
         }
-        #endregion
 
-        #region Настройки
-        void button_aboutRM_Click(object sender, EventArgs e)
+            #endregion
+
+            #region Настройки
+            void button_aboutRM_Click(object sender, EventArgs e)
         {
-            MetroMessageBox.Show(this, "This is launcher for project 'Russian Mafia'", "Information about project", MessageBoxButtons.OK);
+            button_aboutRM.Enabled = false;
+            MetroMessageBox.Show(this, "This is launcher for project 'Russian Mafia'", "Information about project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            button_aboutRM.Enabled = true;
         }
 
         void button_appRestart_Click(object sender, EventArgs e)
         {
+            button_appRestart.Enabled = false;
             SaveSettings();
             Application.Restart();
         }
         void button_aboutDEV_Click(object sender, EventArgs e)
         {
-            MetroMessageBox.Show(this, "developer - www.github.com/eas1Iy", "Contacts DEV", MessageBoxButtons.OK);
+            button_aboutDEV.Enabled = false;
+            MetroMessageBox.Show(this, "developer - www.github.com/eas1Iy", "Contacts DEV", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            button_aboutDEV.Enabled = true;
         }
 
         #endregion
@@ -182,6 +208,12 @@ namespace RMLauncher
 
             changeImagesTheme(metroColorStyle);
 
+            InterfaceSize.Style = metroColorStyle;
+
+            ComboBox_Style.Style = metroColorStyle;
+            StyleManager.Style = metroColorStyle;
+            this.Style = metroColorStyle;
+
             tab.Style = metroColorStyle;
             Tile_servers.Style = metroColorStyle;
             Tile_stats.Style = metroColorStyle;
@@ -199,10 +231,6 @@ namespace RMLauncher
 
             tile_beta.Style = metroColorStyle;
             TextBox_username.Style = metroColorStyle;
-
-            ComboBox_Style.Style = metroColorStyle;
-            StyleManager.Style = metroColorStyle;
-            this.Style = metroColorStyle;
         }
 
         void changeImagesTheme(MetroColorStyle metroColorStyle)
@@ -267,9 +295,9 @@ namespace RMLauncher
 
         void button_updateStat_Click(object sender, EventArgs e)
         {
+            button_updateStat.Enabled = false;
             try
             {
-
                 UpdateStat();
                 UpdateOnline();
                 //UpdatePing();
@@ -278,6 +306,7 @@ namespace RMLauncher
             {
                 MetroMessageBox.Show(this, $"\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            button_updateStat.Enabled = true;
         }
         void updateStats_Tick(object sender, EventArgs e)
         {
@@ -287,12 +316,14 @@ namespace RMLauncher
 
         void RMForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Discord.Deinitialize();
             SaveSettings();
             Application.Exit();
         }
 
         void button_changeLanguage_Click(object sender, EventArgs e)
         {
+            button_changeLanguage.Enabled = false;
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
             {
                 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ru-RU");
@@ -312,14 +343,41 @@ namespace RMLauncher
         }
         void button_checkMods_Click(object sender, EventArgs e)
         {
-            if (DayZCheckMods.IsInstalledCheck(1))
-                MetroMessageBox.Show(this, "Модификации сервера: Namalsk\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else MetroMessageBox.Show(this, "Модификации сервера: Namalsk\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            button_checkMods.Enabled = false;
+            string result;
 
-            if (DayZCheckMods.IsInstalledCheck(2))
-                MetroMessageBox.Show(this, "Модификации серверов: Chernarus\nУспешно проверены.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else MetroMessageBox.Show(this, "Модификации сервера: Chernarus\nНе найдены, подпишитесь на наши модификации.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            if (ru)
+            {
+                result = "Проверка модификаций завершена!\n";
+
+                if (DayZCheckMods.IsInstalledCheck(1))
+                    result += "\nNamalsk - модификации успешно найдены.";
+                else result += "\nNamalsk - модификации не найдены.";
+
+                if (DayZCheckMods.IsInstalledCheck(2))
+                    result += "\nChernarussia - модификации успешно найдены.";
+                else result += "\nChernarussia - модификации не найдены.";
+            }
+            else
+            {
+                result = "Modification check completed!\n";
+
+                if (DayZCheckMods.IsInstalledCheck(1))
+                    result += "\nNamalsk - modifications found successfully.";
+                else result += "\nNamalsk - no modifications found.";
+
+                if (DayZCheckMods.IsInstalledCheck(2))
+                    result += "\nChernarussia - modifications found successfully.";
+                else result += "\nChernarussia - no modifications found.";
+            }
+            
+
+            MetroMessageBox.Show(this,result, "Information about mods", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            button_checkMods.Enabled = true;
         }
+
         void tile_beta_Click(object sender, EventArgs e)
         {
             Alert($"Application version: {ProductVersion}", RMNotification.enmType.Info);
@@ -360,6 +418,27 @@ namespace RMLauncher
         {
             Process.Start("https://github.com/eas1Iy");
             Alert("Show developer page", RMNotification.enmType.Info);
+        }
+
+        void InterfaceSize_ValueChanged(object sender, EventArgs e)
+        {
+            lbl_procentSize.Text = InterfaceSize.Value+"%";
+
+            if (this.WindowState == FormWindowState.Maximized)
+                InferfaceSize(InterfaceSize.Value);
+        }
+
+        Rectangle screenSize = Screen.PrimaryScreen.Bounds;
+        void InferfaceSize(int value)
+        {
+            if (screenSize.Height > 1920 && screenSize.Width > 1200)
+            {
+
+            }
+            if (screenSize.Height >= 4096 && screenSize.Width >= 2160)
+            {
+
+            }
         }
     }
 }

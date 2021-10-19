@@ -97,7 +97,7 @@ namespace RMLauncher.RM_classes
                 GameProcess.StartInfo.FileName = _pathExe;
                 GameProcess.StartInfo.Arguments = _gameArgument;
 
-                if (IsHight) GameProcess.PriorityClass = ProcessPriorityClass.High;
+               // if (IsHight) GameProcess.PriorityClass = ProcessPriorityClass.High;
 
                 GameProcess.StartInfo.Verb = "runas";
                 GameProcess.Start();

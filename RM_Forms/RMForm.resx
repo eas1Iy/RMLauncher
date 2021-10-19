@@ -147,7 +147,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>956, 439</value>
+    <value>960, 450</value>
   </data>
   <data name="tile_beta.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 12</value>
@@ -205,7 +205,7 @@
     <value>False</value>
   </data>
   <data name="TextBox_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 267</value>
+    <value>791, 267</value>
   </data>
   <data name="TextBox_username.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
@@ -229,7 +229,7 @@
     <value>Top, Right</value>
   </data>
   <data name="metroLabel37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 385</value>
+    <value>791, 385</value>
   </data>
   <data name="metroLabel37.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 22</value>
@@ -262,7 +262,7 @@
     <value>Top, Right</value>
   </data>
   <data name="button_changeLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 327</value>
+    <value>791, 327</value>
   </data>
   <data name="button_changeLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
@@ -289,7 +289,7 @@
     <value>Top, Right</value>
   </data>
   <data name="button_checkMods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 356</value>
+    <value>791, 356</value>
   </data>
   <data name="button_checkMods.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
@@ -316,7 +316,7 @@
     <value>Top, Right</value>
   </data>
   <data name="button_updateStat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 298</value>
+    <value>791, 298</value>
   </data>
   <data name="button_updateStat.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
@@ -577,7 +577,7 @@
     <value>10</value>
   </data>
   <data name="panel_right.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 98</value>
+    <value>791, 97</value>
   </data>
   <data name="panel_right.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 162</value>
@@ -1633,7 +1633,7 @@
     <value>14, 11</value>
   </data>
   <data name="Tile_servers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>747, 38</value>
+    <value>751, 38</value>
   </data>
   <data name="Tile_servers.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2002,7 +2002,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
+    <value>773, 341</value>
   </data>
   <data name="panel_main.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2023,7 +2023,7 @@
     <value>4, 38</value>
   </data>
   <data name="page_main.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
+    <value>773, 341</value>
   </data>
   <data name="page_main.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2042,6 +2042,78 @@
   </data>
   <data name="&gt;&gt;page_main.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lbl_procentSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 298</value>
+  </data>
+  <data name="lbl_procentSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 23</value>
+  </data>
+  <data name="lbl_procentSize.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lbl_procentSize.Text" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="&gt;&gt;lbl_procentSize.Name" xml:space="preserve">
+    <value>lbl_procentSize</value>
+  </data>
+  <data name="&gt;&gt;lbl_procentSize.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;lbl_procentSize.Parent" xml:space="preserve">
+    <value>page_settigns</value>
+  </data>
+  <data name="&gt;&gt;lbl_procentSize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="metroLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 270</value>
+  </data>
+  <data name="metroLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 24</value>
+  </data>
+  <data name="metroLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="metroLabel8.Text" xml:space="preserve">
+    <value>Масштаб интерфейса (тест)</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Name" xml:space="preserve">
+    <value>metroLabel8</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Parent" xml:space="preserve">
+    <value>page_settigns</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="InterfaceSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 297</value>
+  </data>
+  <data name="InterfaceSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 24</value>
+  </data>
+  <data name="InterfaceSize.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="InterfaceSize.ToolTip" xml:space="preserve">
+    <value>Работает только тогда, когда приложение развёрнуто на весь экран!</value>
+  </data>
+  <data name="&gt;&gt;InterfaceSize.Name" xml:space="preserve">
+    <value>InterfaceSize</value>
+  </data>
+  <data name="&gt;&gt;InterfaceSize.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTrackBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;InterfaceSize.Parent" xml:space="preserve">
+    <value>page_settigns</value>
+  </data>
+  <data name="&gt;&gt;InterfaceSize.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="button_aboutDEV.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 298</value>
@@ -2065,7 +2137,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;button_aboutDEV.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="button_aboutRM.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 270</value>
@@ -2089,7 +2161,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;button_aboutRM.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="button_appRestart.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 242</value>
@@ -2113,7 +2185,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;button_appRestart.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="ComboBox_Style.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
@@ -2146,7 +2218,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;ComboBox_Style.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="CheckBox_stats.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 182</value>
@@ -2170,7 +2242,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_stats.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="CheckBox_shutdown.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 162</value>
@@ -2194,7 +2266,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_shutdown.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="CheckBox_updates.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 142</value>
@@ -2218,16 +2290,13 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_updates.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="metroLabel39.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>9</value>
   </data>
   <data name="metroLabel39.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 111</value>
   </data>
   <data name="metroLabel39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 19</value>
+    <value>300, 19</value>
   </data>
   <data name="metroLabel39.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2245,7 +2314,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;metroLabel39.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="CheckBox_batteye.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2272,7 +2341,10 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_batteye.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
+  </data>
+  <data name="CheckBox_priority.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="CheckBox_priority.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 64</value>
@@ -2296,7 +2368,7 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_priority.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="CheckBox_windowmode.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 44</value>
@@ -2320,16 +2392,13 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;CheckBox_windowmode.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="metroLabel38.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>13</value>
   </data>
   <data name="metroLabel38.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 13</value>
   </data>
   <data name="metroLabel38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
+    <value>299, 19</value>
   </data>
   <data name="metroLabel38.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2347,13 +2416,13 @@
     <value>page_settigns</value>
   </data>
   <data name="&gt;&gt;metroLabel38.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="page_settigns.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 38</value>
   </data>
   <data name="page_settigns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
+    <value>773, 341</value>
   </data>
   <data name="page_settigns.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2377,7 +2446,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label_help.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 7</value>
+    <value>650, 7</value>
   </data>
   <data name="label_help.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 286</value>
@@ -2410,7 +2479,7 @@
     <value>8, 7</value>
   </data>
   <data name="pb_help.Size" type="System.Drawing.Size, System.Drawing">
-    <value>632, 316</value>
+    <value>636, 327</value>
   </data>
   <data name="pb_help.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -2437,7 +2506,7 @@
     <value>False</value>
   </data>
   <data name="button_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 296</value>
+    <value>650, 307</value>
   </data>
   <data name="button_back.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 26</value>
@@ -2464,7 +2533,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="button_next.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 296</value>
+    <value>712, 307</value>
   </data>
   <data name="button_next.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 26</value>
@@ -2494,7 +2563,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
+    <value>773, 341</value>
   </data>
   <data name="panel_info.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2515,7 +2584,7 @@
     <value>4, 38</value>
   </data>
   <data name="page_about.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 330</value>
+    <value>773, 341</value>
   </data>
   <data name="page_about.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2539,7 +2608,7 @@
     <value>4, 63</value>
   </data>
   <data name="tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>777, 372</value>
+    <value>781, 383</value>
   </data>
   <data name="tab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2811,6 +2880,9 @@
         AAAAHwAA+AAAAAB/AAD8AAAAAH8AAP4AAAAB/wAA/4AAAAH/AAD/wAAAB/8AAP/wAAAf/wAA//4AAP//
         AAD//8AH//8AAP///////wAA////////AAA=
 </value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>790, 440</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>WindowsDefaultLocation</value>

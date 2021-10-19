@@ -87,6 +87,9 @@ namespace RMLauncher
             this.button_connect_namalsk = new MetroFramework.Controls.MetroButton();
             this.Tile_server1 = new MetroFramework.Controls.MetroTile();
             this.page_settigns = new System.Windows.Forms.TabPage();
+            this.lbl_procentSize = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.InterfaceSize = new MetroFramework.Controls.MetroTrackBar();
             this.button_aboutDEV = new MetroFramework.Controls.MetroButton();
             this.button_aboutRM = new MetroFramework.Controls.MetroButton();
             this.button_appRestart = new MetroFramework.Controls.MetroButton();
@@ -165,7 +168,8 @@ namespace RMLauncher
             this.tab.Controls.Add(this.page_settigns);
             this.tab.Controls.Add(this.page_about);
             this.tab.Name = "tab";
-            this.tab.SelectedIndex = 0;
+            this.tab.SelectedIndex = 1;
+            this.tab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tab.Style = MetroFramework.MetroColorStyle.Red;
             this.tab.TabStop = false;
             this.tab.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -290,6 +294,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_connect_cherno2, "button_connect_cherno2");
             this.button_connect_cherno2.Name = "button_connect_cherno2";
             this.button_connect_cherno2.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_connect_cherno2.TabStop = false;
             this.button_connect_cherno2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_connect_cherno2.UseSelectable = true;
             this.button_connect_cherno2.Click += new System.EventHandler(this.button_connect_cherno2_Click);
@@ -395,6 +400,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_connect_cherno1, "button_connect_cherno1");
             this.button_connect_cherno1.Name = "button_connect_cherno1";
             this.button_connect_cherno1.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_connect_cherno1.TabStop = false;
             this.button_connect_cherno1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_connect_cherno1.UseSelectable = true;
             this.button_connect_cherno1.Click += new System.EventHandler(this.button_connect_cherno1_Click);
@@ -499,6 +505,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_connect_livonia, "button_connect_livonia");
             this.button_connect_livonia.Name = "button_connect_livonia";
             this.button_connect_livonia.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_connect_livonia.TabStop = false;
             this.button_connect_livonia.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_connect_livonia.UseSelectable = true;
             this.button_connect_livonia.Click += new System.EventHandler(this.button_connect_livonia_Click);
@@ -613,6 +620,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_connect_namalsk, "button_connect_namalsk");
             this.button_connect_namalsk.Name = "button_connect_namalsk";
             this.button_connect_namalsk.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_connect_namalsk.TabStop = false;
             this.button_connect_namalsk.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_connect_namalsk.UseSelectable = true;
             this.button_connect_namalsk.Click += new System.EventHandler(this.button_connect_namalsk_Click);
@@ -629,6 +637,9 @@ namespace RMLauncher
             // page_settigns
             // 
             this.page_settigns.BackColor = System.Drawing.Color.Transparent;
+            this.page_settigns.Controls.Add(this.lbl_procentSize);
+            this.page_settigns.Controls.Add(this.metroLabel8);
+            this.page_settigns.Controls.Add(this.InterfaceSize);
             this.page_settigns.Controls.Add(this.button_aboutDEV);
             this.page_settigns.Controls.Add(this.button_aboutRM);
             this.page_settigns.Controls.Add(this.button_appRestart);
@@ -644,11 +655,37 @@ namespace RMLauncher
             resources.ApplyResources(this.page_settigns, "page_settigns");
             this.page_settigns.Name = "page_settigns";
             // 
+            // lbl_procentSize
+            // 
+            resources.ApplyResources(this.lbl_procentSize, "lbl_procentSize");
+            this.lbl_procentSize.Name = "lbl_procentSize";
+            this.lbl_procentSize.Style = MetroFramework.MetroColorStyle.Red;
+            this.lbl_procentSize.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroLabel8
+            // 
+            resources.ApplyResources(this.metroLabel8, "metroLabel8");
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // InterfaceSize
+            // 
+            this.InterfaceSize.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.InterfaceSize, "InterfaceSize");
+            this.InterfaceSize.Name = "InterfaceSize";
+            this.InterfaceSize.Style = MetroFramework.MetroColorStyle.Red;
+            this.InterfaceSize.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ToolTip_help.SetToolTip(this.InterfaceSize, resources.GetString("InterfaceSize.ToolTip"));
+            this.InterfaceSize.Value = 0;
+            this.InterfaceSize.ValueChanged += new System.EventHandler(this.InterfaceSize_ValueChanged);
+            // 
             // button_aboutDEV
             // 
             resources.ApplyResources(this.button_aboutDEV, "button_aboutDEV");
             this.button_aboutDEV.Name = "button_aboutDEV";
             this.button_aboutDEV.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.button_aboutDEV.TabStop = false;
             this.button_aboutDEV.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_aboutDEV.UseSelectable = true;
             this.button_aboutDEV.Click += new System.EventHandler(this.button_aboutDEV_Click);
@@ -658,6 +695,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_aboutRM, "button_aboutRM");
             this.button_aboutRM.Name = "button_aboutRM";
             this.button_aboutRM.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.button_aboutRM.TabStop = false;
             this.button_aboutRM.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_aboutRM.UseSelectable = true;
             this.button_aboutRM.Click += new System.EventHandler(this.button_aboutRM_Click);
@@ -667,6 +705,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_appRestart, "button_appRestart");
             this.button_appRestart.Name = "button_appRestart";
             this.button_appRestart.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.button_appRestart.TabStop = false;
             this.button_appRestart.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_appRestart.UseSelectable = true;
             this.button_appRestart.Click += new System.EventHandler(this.button_appRestart_Click);
@@ -683,6 +722,7 @@ namespace RMLauncher
             this.ComboBox_Style.Name = "ComboBox_Style";
             this.ComboBox_Style.PromptText = "Choose a color palette (wait 5 seconds)";
             this.ComboBox_Style.Style = MetroFramework.MetroColorStyle.Red;
+            this.ComboBox_Style.TabStop = false;
             this.ComboBox_Style.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ComboBox_Style.UseSelectable = true;
             this.ComboBox_Style.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Style_SelectedIndexChanged);
@@ -694,6 +734,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_stats, "CheckBox_stats");
             this.CheckBox_stats.Name = "CheckBox_stats";
             this.CheckBox_stats.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_stats.TabStop = false;
             this.CheckBox_stats.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_stats.UseSelectable = true;
             this.CheckBox_stats.CheckedChanged += new System.EventHandler(this.CheckBox_stats_CheckedChanged);
@@ -703,6 +744,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_shutdown, "CheckBox_shutdown");
             this.CheckBox_shutdown.Name = "CheckBox_shutdown";
             this.CheckBox_shutdown.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_shutdown.TabStop = false;
             this.CheckBox_shutdown.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_shutdown.UseSelectable = true;
             // 
@@ -713,6 +755,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_updates, "CheckBox_updates");
             this.CheckBox_updates.Name = "CheckBox_updates";
             this.CheckBox_updates.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_updates.TabStop = false;
             this.CheckBox_updates.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_updates.UseSelectable = true;
             // 
@@ -728,6 +771,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_batteye, "CheckBox_batteye");
             this.CheckBox_batteye.Name = "CheckBox_batteye";
             this.CheckBox_batteye.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_batteye.TabStop = false;
             this.CheckBox_batteye.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_batteye.UseSelectable = true;
             // 
@@ -736,6 +780,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_priority, "CheckBox_priority");
             this.CheckBox_priority.Name = "CheckBox_priority";
             this.CheckBox_priority.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_priority.TabStop = false;
             this.CheckBox_priority.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_priority.UseSelectable = true;
             // 
@@ -744,6 +789,7 @@ namespace RMLauncher
             resources.ApplyResources(this.CheckBox_windowmode, "CheckBox_windowmode");
             this.CheckBox_windowmode.Name = "CheckBox_windowmode";
             this.CheckBox_windowmode.Style = MetroFramework.MetroColorStyle.Red;
+            this.CheckBox_windowmode.TabStop = false;
             this.CheckBox_windowmode.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CheckBox_windowmode.UseSelectable = true;
             // 
@@ -802,6 +848,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_back, "button_back");
             this.button_back.Name = "button_back";
             this.button_back.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_back.TabStop = false;
             this.button_back.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_back.UseSelectable = true;
             this.button_back.Click += new System.EventHandler(this.button_back_Click);
@@ -811,6 +858,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_next, "button_next");
             this.button_next.Name = "button_next";
             this.button_next.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_next.TabStop = false;
             this.button_next.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_next.UseSelectable = true;
             this.button_next.Click += new System.EventHandler(this.button_next_Click);
@@ -907,6 +955,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_updateStat, "button_updateStat");
             this.button_updateStat.Name = "button_updateStat";
             this.button_updateStat.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_updateStat.TabStop = false;
             this.button_updateStat.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_updateStat.UseSelectable = true;
             this.button_updateStat.Click += new System.EventHandler(this.button_updateStat_Click);
@@ -916,6 +965,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_checkMods, "button_checkMods");
             this.button_checkMods.Name = "button_checkMods";
             this.button_checkMods.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_checkMods.TabStop = false;
             this.button_checkMods.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_checkMods.UseSelectable = true;
             this.button_checkMods.Click += new System.EventHandler(this.button_checkMods_Click);
@@ -935,6 +985,7 @@ namespace RMLauncher
             resources.ApplyResources(this.button_changeLanguage, "button_changeLanguage");
             this.button_changeLanguage.Name = "button_changeLanguage";
             this.button_changeLanguage.Style = MetroFramework.MetroColorStyle.Red;
+            this.button_changeLanguage.TabStop = false;
             this.button_changeLanguage.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.button_changeLanguage.UseSelectable = true;
             this.button_changeLanguage.Click += new System.EventHandler(this.button_changeLanguage_Click);
@@ -972,6 +1023,7 @@ namespace RMLauncher
             this.TextBox_username.SelectionStart = 0;
             this.TextBox_username.ShortcutsEnabled = true;
             this.TextBox_username.Style = MetroFramework.MetroColorStyle.Red;
+            this.TextBox_username.TabStop = false;
             this.TextBox_username.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TextBox_username.UseSelectable = true;
             this.TextBox_username.WaterMark = "Your nickname";
@@ -985,6 +1037,7 @@ namespace RMLauncher
             resources.ApplyResources(this.tile_beta, "tile_beta");
             this.tile_beta.Name = "tile_beta";
             this.tile_beta.Style = MetroFramework.MetroColorStyle.Red;
+            this.tile_beta.TabStop = false;
             this.tile_beta.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tile_beta.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
             this.ToolTip_help.SetToolTip(this.tile_beta, resources.GetString("tile_beta.ToolTip"));
@@ -1028,7 +1081,6 @@ namespace RMLauncher
             this.metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).EndInit();
             this.page_settigns.ResumeLayout(false);
-            this.page_settigns.PerformLayout();
             this.page_about.ResumeLayout(false);
             this.panel_info.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_help)).EndInit();
@@ -1131,6 +1183,9 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroButton button_next;
         private System.Windows.Forms.PictureBox pb_help;
         private MetroFramework.Controls.MetroLabel label_help;
+        private MetroFramework.Controls.MetroTrackBar InterfaceSize;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel lbl_procentSize;
     }
 }
 
