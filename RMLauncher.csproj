@@ -144,6 +144,12 @@
     </Compile>
     <Compile Include="RM_classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RM_Forms\RM_TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RM_Forms\RM_TestForm.Designer.cs">
+      <DependentUpon>RM_TestForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="RM_Forms\RMConnect.resx">
       <DependentUpon>RMConnect.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RM_Forms\RMStart.uz.resx">
       <DependentUpon>RMStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RM_Forms\RM_TestForm.resx">
+      <DependentUpon>RM_TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="app.manifest" />

@@ -79,12 +79,10 @@ namespace RMLauncher
         {
 
             label_namalsk_pp.Text = "1PP";
-            label_livonia_pp.Text = "3PP";
             label_cherno1_pp.Text = "1PP";
             label_cherno2_pp.Text = "3PP";
             //
             label_namalsk_map.Text = "namalsk";
-            label_livonia_map.Text = "livonia";
             label_cherno1_map.Text = "chernarus";
             label_cherno2_map.Text = "chernarus";
             //
@@ -92,9 +90,9 @@ namespace RMLauncher
             {
                 this.Invoke(new Action(() =>
                 {
-                    UpdateStat();
-                    UpdateOnline();
-                    UpdatePing();
+                    //UpdateStat();
+                    //UpdateOnline();
+                    //UpdatePing();
                 }));
             });
             updateThread.Start();
@@ -107,14 +105,14 @@ namespace RMLauncher
             button_connect_namalsk.Enabled = false;
             GameStart(1);
             
-            Discord.JoinServer("Russian Mafia | Namalsk");
+            Discord.JoinServer("Russian Mafia ┃ Namalsk");
 
             button_connect_namalsk.Enabled = true;
         }
 
         void button_connect_livonia_Click(object sender, EventArgs e)
         {
-            button_connect_livonia.Enabled = false;
+            //button_connect_livonia.Enabled = false;
         }
 
         void button_connect_cherno1_Click(object sender, EventArgs e)
@@ -123,7 +121,7 @@ namespace RMLauncher
 
             GameStart(2);
 
-            Discord.JoinServer("Russian Mafia | Chernarussia 1PP #1");
+            Discord.JoinServer("Russian Mafia ┃ Chernarussia 1PP");
 
             button_connect_cherno1.Enabled = true;
         }
@@ -134,7 +132,7 @@ namespace RMLauncher
 
             GameStart(3);
 
-            Discord.JoinServer("Russian Mafia | Chernarussia 3PP #2");
+            Discord.JoinServer("Russian Mafia ┃ Chernarussia 3PP");
 
             button_connect_cherno2.Enabled = true;
         }
@@ -240,7 +238,7 @@ namespace RMLauncher
             Tile_servers.Style = metroColorStyle;
             Tile_stats.Style = metroColorStyle;
             Tile_server1.Style = metroColorStyle;
-            Tile_server2.Style = metroColorStyle;
+            //Tile_server2.Style = metroColorStyle;
             Tile_server3.Style = metroColorStyle;
             Tile_server4.Style = metroColorStyle;
 
@@ -473,6 +471,11 @@ namespace RMLauncher
             {
 
             }
+        }
+
+        void RMForm_MaximumSizeChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

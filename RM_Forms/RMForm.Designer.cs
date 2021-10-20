@@ -37,7 +37,7 @@ namespace RMLauncher
             this.tab = new MetroFramework.Controls.MetroTabControl();
             this.page_main = new System.Windows.Forms.TabPage();
             this.panel_main = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            this.panel_chernarus2 = new MetroFramework.Controls.MetroPanel();
             this.label_cherno2_pp = new MetroFramework.Controls.MetroLabel();
             this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
             this.label_cherno2_ping = new MetroFramework.Controls.MetroLabel();
@@ -49,7 +49,7 @@ namespace RMLauncher
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
             this.button_connect_cherno2 = new MetroFramework.Controls.MetroButton();
             this.Tile_server4 = new MetroFramework.Controls.MetroTile();
-            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.panel_chernarus = new MetroFramework.Controls.MetroPanel();
             this.label_cherno1_pp = new MetroFramework.Controls.MetroLabel();
             this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
             this.label_cherno1_ping = new MetroFramework.Controls.MetroLabel();
@@ -61,20 +61,8 @@ namespace RMLauncher
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.button_connect_cherno1 = new MetroFramework.Controls.MetroButton();
             this.Tile_server3 = new MetroFramework.Controls.MetroTile();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.label_livonia_pp = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
-            this.label_livonia_ping = new MetroFramework.Controls.MetroLabel();
-            this.label_livonia_online = new MetroFramework.Controls.MetroLabel();
-            this.label_livonia_map = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
-            this.button_connect_livonia = new MetroFramework.Controls.MetroButton();
-            this.Tile_server2 = new MetroFramework.Controls.MetroTile();
             this.Tile_servers = new MetroFramework.Controls.MetroTile();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.panel_namalsk = new MetroFramework.Controls.MetroPanel();
             this.label_namalsk_pp = new MetroFramework.Controls.MetroLabel();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.label_namalsk_ping = new MetroFramework.Controls.MetroLabel();
@@ -130,13 +118,11 @@ namespace RMLauncher
             this.tab.SuspendLayout();
             this.page_main.SuspendLayout();
             this.panel_main.SuspendLayout();
-            this.metroPanel4.SuspendLayout();
+            this.panel_chernarus2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).BeginInit();
-            this.metroPanel3.SuspendLayout();
+            this.panel_chernarus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).BeginInit();
-            this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.metroPanel1.SuspendLayout();
+            this.panel_namalsk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).BeginInit();
             this.page_settigns.SuspendLayout();
             this.page_about.SuspendLayout();
@@ -185,11 +171,10 @@ namespace RMLauncher
             // panel_main
             // 
             resources.ApplyResources(this.panel_main, "panel_main");
-            this.panel_main.Controls.Add(this.metroPanel4);
-            this.panel_main.Controls.Add(this.metroPanel3);
-            this.panel_main.Controls.Add(this.metroPanel2);
+            this.panel_main.Controls.Add(this.panel_chernarus2);
+            this.panel_main.Controls.Add(this.panel_chernarus);
             this.panel_main.Controls.Add(this.Tile_servers);
-            this.panel_main.Controls.Add(this.metroPanel1);
+            this.panel_main.Controls.Add(this.panel_namalsk);
             this.panel_main.HorizontalScrollbar = true;
             this.panel_main.HorizontalScrollbarBarColor = false;
             this.panel_main.HorizontalScrollbarHighlightOnWheel = false;
@@ -202,29 +187,29 @@ namespace RMLauncher
             this.panel_main.VerticalScrollbarHighlightOnWheel = false;
             this.panel_main.VerticalScrollbarSize = 10;
             // 
-            // metroPanel4
+            // panel_chernarus2
             // 
-            this.metroPanel4.Controls.Add(this.label_cherno2_pp);
-            this.metroPanel4.Controls.Add(this.metroLabel30);
-            this.metroPanel4.Controls.Add(this.label_cherno2_ping);
-            this.metroPanel4.Controls.Add(this.label_cherno2_online);
-            this.metroPanel4.Controls.Add(this.label_cherno2_map);
-            this.metroPanel4.Controls.Add(this.pictureBox_cherno2);
-            this.metroPanel4.Controls.Add(this.metroLabel34);
-            this.metroPanel4.Controls.Add(this.metroLabel35);
-            this.metroPanel4.Controls.Add(this.metroLabel36);
-            this.metroPanel4.Controls.Add(this.button_connect_cherno2);
-            this.metroPanel4.Controls.Add(this.Tile_server4);
-            this.metroPanel4.HorizontalScrollbarBarColor = true;
-            this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel4, "metroPanel4");
-            this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroPanel4.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel4.VerticalScrollbarBarColor = true;
-            this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.VerticalScrollbarSize = 10;
+            resources.ApplyResources(this.panel_chernarus2, "panel_chernarus2");
+            this.panel_chernarus2.Controls.Add(this.label_cherno2_pp);
+            this.panel_chernarus2.Controls.Add(this.metroLabel30);
+            this.panel_chernarus2.Controls.Add(this.label_cherno2_ping);
+            this.panel_chernarus2.Controls.Add(this.label_cherno2_online);
+            this.panel_chernarus2.Controls.Add(this.label_cherno2_map);
+            this.panel_chernarus2.Controls.Add(this.pictureBox_cherno2);
+            this.panel_chernarus2.Controls.Add(this.metroLabel34);
+            this.panel_chernarus2.Controls.Add(this.metroLabel35);
+            this.panel_chernarus2.Controls.Add(this.metroLabel36);
+            this.panel_chernarus2.Controls.Add(this.button_connect_cherno2);
+            this.panel_chernarus2.Controls.Add(this.Tile_server4);
+            this.panel_chernarus2.HorizontalScrollbarBarColor = true;
+            this.panel_chernarus2.HorizontalScrollbarHighlightOnWheel = false;
+            this.panel_chernarus2.HorizontalScrollbarSize = 10;
+            this.panel_chernarus2.Name = "panel_chernarus2";
+            this.panel_chernarus2.Style = MetroFramework.MetroColorStyle.Red;
+            this.panel_chernarus2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panel_chernarus2.VerticalScrollbarBarColor = true;
+            this.panel_chernarus2.VerticalScrollbarHighlightOnWheel = false;
+            this.panel_chernarus2.VerticalScrollbarSize = 10;
             // 
             // label_cherno2_pp
             // 
@@ -308,29 +293,29 @@ namespace RMLauncher
             this.Tile_server4.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Tile_server4.UseSelectable = true;
             // 
-            // metroPanel3
+            // panel_chernarus
             // 
-            this.metroPanel3.Controls.Add(this.label_cherno1_pp);
-            this.metroPanel3.Controls.Add(this.metroLabel22);
-            this.metroPanel3.Controls.Add(this.label_cherno1_ping);
-            this.metroPanel3.Controls.Add(this.label_cherno1_online);
-            this.metroPanel3.Controls.Add(this.label_cherno1_map);
-            this.metroPanel3.Controls.Add(this.pictureBox_cherno1);
-            this.metroPanel3.Controls.Add(this.metroLabel26);
-            this.metroPanel3.Controls.Add(this.metroLabel27);
-            this.metroPanel3.Controls.Add(this.metroLabel28);
-            this.metroPanel3.Controls.Add(this.button_connect_cherno1);
-            this.metroPanel3.Controls.Add(this.Tile_server3);
-            this.metroPanel3.HorizontalScrollbarBarColor = true;
-            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel3, "metroPanel3");
-            this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel3.VerticalScrollbarBarColor = true;
-            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
+            resources.ApplyResources(this.panel_chernarus, "panel_chernarus");
+            this.panel_chernarus.Controls.Add(this.label_cherno1_pp);
+            this.panel_chernarus.Controls.Add(this.metroLabel22);
+            this.panel_chernarus.Controls.Add(this.label_cherno1_ping);
+            this.panel_chernarus.Controls.Add(this.label_cherno1_online);
+            this.panel_chernarus.Controls.Add(this.label_cherno1_map);
+            this.panel_chernarus.Controls.Add(this.pictureBox_cherno1);
+            this.panel_chernarus.Controls.Add(this.metroLabel26);
+            this.panel_chernarus.Controls.Add(this.metroLabel27);
+            this.panel_chernarus.Controls.Add(this.metroLabel28);
+            this.panel_chernarus.Controls.Add(this.button_connect_cherno1);
+            this.panel_chernarus.Controls.Add(this.Tile_server3);
+            this.panel_chernarus.HorizontalScrollbarBarColor = true;
+            this.panel_chernarus.HorizontalScrollbarHighlightOnWheel = false;
+            this.panel_chernarus.HorizontalScrollbarSize = 10;
+            this.panel_chernarus.Name = "panel_chernarus";
+            this.panel_chernarus.Style = MetroFramework.MetroColorStyle.Red;
+            this.panel_chernarus.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panel_chernarus.VerticalScrollbarBarColor = true;
+            this.panel_chernarus.VerticalScrollbarHighlightOnWheel = false;
+            this.panel_chernarus.VerticalScrollbarSize = 10;
             // 
             // label_cherno1_pp
             // 
@@ -414,111 +399,6 @@ namespace RMLauncher
             this.Tile_server3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Tile_server3.UseSelectable = true;
             // 
-            // metroPanel2
-            // 
-            this.metroPanel2.Controls.Add(this.label_livonia_pp);
-            this.metroPanel2.Controls.Add(this.metroLabel14);
-            this.metroPanel2.Controls.Add(this.label_livonia_ping);
-            this.metroPanel2.Controls.Add(this.label_livonia_online);
-            this.metroPanel2.Controls.Add(this.label_livonia_map);
-            this.metroPanel2.Controls.Add(this.pictureBox1);
-            this.metroPanel2.Controls.Add(this.metroLabel18);
-            this.metroPanel2.Controls.Add(this.metroLabel19);
-            this.metroPanel2.Controls.Add(this.metroLabel20);
-            this.metroPanel2.Controls.Add(this.button_connect_livonia);
-            this.metroPanel2.Controls.Add(this.Tile_server2);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel2, "metroPanel2");
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroPanel2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            // 
-            // label_livonia_pp
-            // 
-            resources.ApplyResources(this.label_livonia_pp, "label_livonia_pp");
-            this.label_livonia_pp.Name = "label_livonia_pp";
-            this.label_livonia_pp.Style = MetroFramework.MetroColorStyle.Red;
-            this.label_livonia_pp.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel14
-            // 
-            resources.ApplyResources(this.metroLabel14, "metroLabel14");
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel14.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // label_livonia_ping
-            // 
-            resources.ApplyResources(this.label_livonia_ping, "label_livonia_ping");
-            this.label_livonia_ping.Name = "label_livonia_ping";
-            this.label_livonia_ping.Style = MetroFramework.MetroColorStyle.Red;
-            this.label_livonia_ping.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // label_livonia_online
-            // 
-            resources.ApplyResources(this.label_livonia_online, "label_livonia_online");
-            this.label_livonia_online.Name = "label_livonia_online";
-            this.label_livonia_online.Style = MetroFramework.MetroColorStyle.Red;
-            this.label_livonia_online.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // label_livonia_map
-            // 
-            resources.ApplyResources(this.label_livonia_map, "label_livonia_map");
-            this.label_livonia_map.Name = "label_livonia_map";
-            this.label_livonia_map.Style = MetroFramework.MetroColorStyle.Red;
-            this.label_livonia_map.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // metroLabel18
-            // 
-            resources.ApplyResources(this.metroLabel18, "metroLabel18");
-            this.metroLabel18.Name = "metroLabel18";
-            this.metroLabel18.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel18.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel19
-            // 
-            resources.ApplyResources(this.metroLabel19, "metroLabel19");
-            this.metroLabel19.Name = "metroLabel19";
-            this.metroLabel19.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel19.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel20
-            // 
-            resources.ApplyResources(this.metroLabel20, "metroLabel20");
-            this.metroLabel20.Name = "metroLabel20";
-            this.metroLabel20.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel20.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // button_connect_livonia
-            // 
-            resources.ApplyResources(this.button_connect_livonia, "button_connect_livonia");
-            this.button_connect_livonia.Name = "button_connect_livonia";
-            this.button_connect_livonia.Style = MetroFramework.MetroColorStyle.Red;
-            this.button_connect_livonia.TabStop = false;
-            this.button_connect_livonia.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.button_connect_livonia.UseSelectable = true;
-            this.button_connect_livonia.Click += new System.EventHandler(this.button_connect_livonia_Click);
-            // 
-            // Tile_server2
-            // 
-            this.Tile_server2.ActiveControl = null;
-            resources.ApplyResources(this.Tile_server2, "Tile_server2");
-            this.Tile_server2.Name = "Tile_server2";
-            this.Tile_server2.Style = MetroFramework.MetroColorStyle.Red;
-            this.Tile_server2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Tile_server2.UseSelectable = true;
-            // 
             // Tile_servers
             // 
             this.Tile_servers.ActiveControl = null;
@@ -528,29 +408,29 @@ namespace RMLauncher
             this.Tile_servers.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Tile_servers.UseSelectable = true;
             // 
-            // metroPanel1
+            // panel_namalsk
             // 
-            this.metroPanel1.Controls.Add(this.label_namalsk_pp);
-            this.metroPanel1.Controls.Add(this.metroLabel12);
-            this.metroPanel1.Controls.Add(this.label_namalsk_ping);
-            this.metroPanel1.Controls.Add(this.label_namalsk_online);
-            this.metroPanel1.Controls.Add(this.label_namalsk_map);
-            this.metroPanel1.Controls.Add(this.pictureBox_namalsk);
-            this.metroPanel1.Controls.Add(this.metroLabel7);
-            this.metroPanel1.Controls.Add(this.metroLabel6);
-            this.metroPanel1.Controls.Add(this.metroLabel5);
-            this.metroPanel1.Controls.Add(this.button_connect_namalsk);
-            this.metroPanel1.Controls.Add(this.Tile_server1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel1, "metroPanel1");
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            resources.ApplyResources(this.panel_namalsk, "panel_namalsk");
+            this.panel_namalsk.Controls.Add(this.label_namalsk_pp);
+            this.panel_namalsk.Controls.Add(this.metroLabel12);
+            this.panel_namalsk.Controls.Add(this.label_namalsk_ping);
+            this.panel_namalsk.Controls.Add(this.label_namalsk_online);
+            this.panel_namalsk.Controls.Add(this.label_namalsk_map);
+            this.panel_namalsk.Controls.Add(this.pictureBox_namalsk);
+            this.panel_namalsk.Controls.Add(this.metroLabel7);
+            this.panel_namalsk.Controls.Add(this.metroLabel6);
+            this.panel_namalsk.Controls.Add(this.metroLabel5);
+            this.panel_namalsk.Controls.Add(this.button_connect_namalsk);
+            this.panel_namalsk.Controls.Add(this.Tile_server1);
+            this.panel_namalsk.HorizontalScrollbarBarColor = true;
+            this.panel_namalsk.HorizontalScrollbarHighlightOnWheel = false;
+            this.panel_namalsk.HorizontalScrollbarSize = 10;
+            this.panel_namalsk.Name = "panel_namalsk";
+            this.panel_namalsk.Style = MetroFramework.MetroColorStyle.Red;
+            this.panel_namalsk.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panel_namalsk.VerticalScrollbarBarColor = true;
+            this.panel_namalsk.VerticalScrollbarHighlightOnWheel = false;
+            this.panel_namalsk.VerticalScrollbarSize = 10;
             // 
             // label_namalsk_pp
             // 
@@ -1066,19 +946,18 @@ namespace RMLauncher
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.MaximumSizeChanged += new System.EventHandler(this.RMForm_MaximumSizeChanged);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RMForm_FormClosing);
             this.Load += new System.EventHandler(this.RMForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
             this.tab.ResumeLayout(false);
             this.page_main.ResumeLayout(false);
             this.panel_main.ResumeLayout(false);
-            this.metroPanel4.ResumeLayout(false);
+            this.panel_chernarus2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno2)).EndInit();
-            this.metroPanel3.ResumeLayout(false);
+            this.panel_chernarus.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cherno1)).EndInit();
-            this.metroPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
+            this.panel_namalsk.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_namalsk)).EndInit();
             this.page_settigns.ResumeLayout(false);
             this.page_about.ResumeLayout(false);
@@ -1110,7 +989,7 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroLabel label_statusOnline;
         private MetroFramework.Controls.MetroPanel panel_info;
         private MetroFramework.Controls.MetroPanel panel_main;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroPanel panel_namalsk;
         private MetroFramework.Controls.MetroTile Tile_servers;
         private MetroFramework.Controls.MetroTile Tile_server1;
         private MetroFramework.Controls.MetroButton button_connect_namalsk;
@@ -1123,19 +1002,7 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroLabel label_namalsk_map;
         private MetroFramework.Controls.MetroLabel label_namalsk_pp;
         private MetroFramework.Controls.MetroLabel metroLabel12;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroLabel label_livonia_pp;
-        private MetroFramework.Controls.MetroLabel metroLabel14;
-        private MetroFramework.Controls.MetroLabel label_livonia_ping;
-        private MetroFramework.Controls.MetroLabel label_livonia_online;
-        private MetroFramework.Controls.MetroLabel label_livonia_map;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private MetroFramework.Controls.MetroLabel metroLabel18;
-        private MetroFramework.Controls.MetroLabel metroLabel19;
-        private MetroFramework.Controls.MetroLabel metroLabel20;
-        private MetroFramework.Controls.MetroButton button_connect_livonia;
-        private MetroFramework.Controls.MetroTile Tile_server2;
-        private MetroFramework.Controls.MetroPanel metroPanel4;
+        private MetroFramework.Controls.MetroPanel panel_chernarus2;
         private MetroFramework.Controls.MetroLabel label_cherno2_pp;
         private MetroFramework.Controls.MetroLabel metroLabel30;
         private MetroFramework.Controls.MetroLabel label_cherno2_ping;
@@ -1147,7 +1014,7 @@ namespace RMLauncher
         private MetroFramework.Controls.MetroLabel metroLabel36;
         private MetroFramework.Controls.MetroButton button_connect_cherno2;
         private MetroFramework.Controls.MetroTile Tile_server4;
-        private MetroFramework.Controls.MetroPanel metroPanel3;
+        private MetroFramework.Controls.MetroPanel panel_chernarus;
         private MetroFramework.Controls.MetroLabel label_cherno1_pp;
         private MetroFramework.Controls.MetroLabel metroLabel22;
         private MetroFramework.Controls.MetroLabel label_cherno1_ping;
