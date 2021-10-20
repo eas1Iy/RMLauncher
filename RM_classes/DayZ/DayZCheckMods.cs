@@ -79,6 +79,16 @@ namespace RMLauncher.RM_classes.DayZ
                         }
                         break;
                     }
+                case 3:
+                    {
+                        for (int i = 0; i < RM_livoniaANDcherno.Length;)
+                        {
+                            if (Directory.Exists(_pathModsWorkshop + RM_namalsk[i]) || Directory.Exists(_pathModsDZSA + RM_namalsk[i]))
+                                return true;
+                            else return false;
+                        }
+                        break;
+                    }
             }
             return false;
         }

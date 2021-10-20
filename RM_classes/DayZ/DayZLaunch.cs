@@ -25,8 +25,9 @@ namespace RMLauncher.RM_classes
         public static string RM_chernoDZSA = $@"""-mod={_pathModsDZSA + "@CF"};{_pathModsDZSA + "@Russian Mafia"};{_pathModsDZSA + "@BuildAnywhere_v3"};{_pathModsDZSA + "@VPPAdminTools"};{_pathModsDZSA + "@Advanced Weapon Scopes"};{_pathModsDZSA + "@Ear-Plugs"};{_pathModsDZSA + "@Code Lock"};""";
 
         public static string ip = "185.189.255.184";
-        public static string port_namalsk = "2402";
-        public static string port_cherno = "2302";
+        public static string port_namalsk = "2302";
+        public static string port_cherno = "2402";
+        public static string port_cherno3 = "2602";
 
         public static string _gameArgument;
 
@@ -75,6 +76,23 @@ namespace RMLauncher.RM_classes
                                     else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
                                 }
                                     
+                                if (GameLaunch() == true) { return true; } else return false;
+                            }
+                        case 3: // cherno 3pp
+                            {
+                                if (DayZCheckMods.IsDZSAModsCheck(2) == false)
+                                {
+                                    if (IsWindow)
+                                        _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                    else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                }
+                                else
+                                {
+                                    if (IsWindow)
+                                        _gameArgument = $@"{RM_chernoDZSA} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                    else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                }
+
                                 if (GameLaunch() == true) { return true; } else return false;
                             }
                         default: return false;

@@ -168,7 +168,7 @@ namespace RMLauncher
             this.tab.Controls.Add(this.page_settigns);
             this.tab.Controls.Add(this.page_about);
             this.tab.Name = "tab";
-            this.tab.SelectedIndex = 1;
+            this.tab.SelectedIndex = 0;
             this.tab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tab.Style = MetroFramework.MetroColorStyle.Red;
             this.tab.TabStop = false;

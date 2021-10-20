@@ -15,6 +15,7 @@ namespace RMLauncher.RM_classes
     {
         public string ip_namalsk = "185.189.255.184:27017"; //
         public string ip_cherno = "185.189.255.184:27016"; //
+        public string ip_cherno3 = "185.189.255.184:27023";
 
         IServerQuery serverQuery;
         SteamQueryNet.Models.ServerInfo serverInfo;
@@ -35,6 +36,11 @@ namespace RMLauncher.RM_classes
                     case 2:
                         {
                             serverQuery = new ServerQuery(ip_cherno);
+                            break;
+                        }
+                    case 3:
+                        {
+                            serverQuery = new ServerQuery(ip_cherno3);
                             break;
                         }
                 }
@@ -65,6 +71,11 @@ namespace RMLauncher.RM_classes
                     case 2:
                         {
                             serverQuery = new ServerQuery(ip_cherno);
+                            break;
+                        }
+                    case 3:
+                        {
+                            serverQuery = new ServerQuery(ip_cherno3);
                             break;
                         }
                 }

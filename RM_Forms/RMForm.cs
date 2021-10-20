@@ -28,7 +28,7 @@ namespace RMLauncher
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(Settings.Default.Language);
             InitializeComponent();
-            Themes();
+            GetTheme();
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US") ru = false;
             else ru = true;
         }
@@ -88,7 +88,7 @@ namespace RMLauncher
             label_cherno1_map.Text = "chernarus";
             label_cherno2_map.Text = "chernarus";
             //
-            Thread t = new Thread(delegate ()
+            Thread updateThread = new Thread(delegate ()
             {
                 this.Invoke(new Action(() =>
                 {
@@ -97,7 +97,7 @@ namespace RMLauncher
                     UpdatePing();
                 }));
             });
-            t.Start();
+            updateThread.Start();
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace RMLauncher
 
             GameStart(2);
 
-            Discord.JoinServer("Russian Mafia | Chernarussia #1");
+            Discord.JoinServer("Russian Mafia | Chernarussia 1PP #1");
 
             button_connect_cherno1.Enabled = true;
         }
@@ -131,6 +131,12 @@ namespace RMLauncher
         void button_connect_cherno2_Click(object sender, EventArgs e)
         {
             button_connect_cherno2.Enabled = false;
+
+            GameStart(3);
+
+            Discord.JoinServer("Russian Mafia | Chernarussia 3PP #2");
+
+            button_connect_cherno2.Enabled = true;
         }
 
         public bool GameStart(byte serverID)
@@ -193,18 +199,34 @@ namespace RMLauncher
         {
             switch (ComboBox_Style.SelectedIndex)
             {
-                case 0: Settings.Default["style"] = "Red"; break;
-                case 1: Settings.Default["style"] = "Green"; break;
-                case 2: Settings.Default["style"] = "Black"; break;
+                case 0: ComboBoxStyleChanger(0); break;
+                case 1: ComboBoxStyleChanger(1); break;
+                case 2: ComboBoxStyleChanger(2); break;
+                default: break;
+            }
+        }
+
+        void ComboBoxStyleChanger(int index)
+        {
+            switch (index)
+            {
+                case 0: Settings.Default["style"] = "Red"; ThemeChanger(MetroColorStyle.Red); break;
+                case 1: Settings.Default["style"] = "Green"; ThemeChanger(MetroColorStyle.Green); break;
+                case 2: Settings.Default["style"] = "Black"; ThemeChanger(MetroColorStyle.Black); break;
                 default: break;
             }
             SaveSettings();
-            Themes();
         }
 
-        void Themes()
+        void GetTheme()
         {
-            MetroColorStyle metroColorStyle = themeChanger.StyleChanger();
+            MetroColorStyle style = themeChanger.StyleChanger();
+            ThemeChanger(style);
+        }
+
+        void ThemeChanger(MetroColorStyle metroColorStyle)
+        {
+            StyleManager.Update();
 
             changeImagesTheme(metroColorStyle);
 
@@ -235,24 +257,34 @@ namespace RMLauncher
 
         void changeImagesTheme(MetroColorStyle metroColorStyle)
         {
-            if (metroColorStyle == MetroColorStyle.Green)
+            switch (metroColorStyle)
             {
-                pictureBox_namalsk.Image = Resources.green_namalsk;
-                pictureBox_cherno1.Image = Resources.green_cherno;
-                pictureBox_cherno2.Image = Resources.green_cherno;
-            }
-            else if (metroColorStyle == MetroColorStyle.Black)
-            {
-                ;
-                pictureBox_namalsk.Image = Resources.black_namalsk;
-                pictureBox_cherno1.Image = Resources.black_cherno;
-                pictureBox_cherno2.Image = Resources.black_cherno;
-            }
-            else
-            {
-                pictureBox_namalsk.Image = Resources.red_namalsk;
-                pictureBox_cherno1.Image = Resources.red_cherno;
-                pictureBox_cherno2.Image = Resources.red_cherno;
+                case MetroColorStyle.Black:
+                    {
+                        pictureBox_namalsk.Image = Resources.black_namalsk;
+                        pictureBox_cherno1.Image = Resources.black_cherno;
+                        pictureBox_cherno2.Image = Resources.black_cherno;
+                    }
+                    break;
+                case MetroColorStyle.Green:
+                    {
+                        pictureBox_namalsk.Image = Resources.green_namalsk;
+                        pictureBox_cherno1.Image = Resources.green_cherno;
+                        pictureBox_cherno2.Image = Resources.green_cherno;
+                    }
+                    break;
+                case MetroColorStyle.Red:
+                    {
+                        pictureBox_namalsk.Image = Resources.red_namalsk;
+                        pictureBox_cherno1.Image = Resources.red_cherno;
+                        pictureBox_cherno2.Image = Resources.red_cherno;
+                    }
+                    break;
+                default:
+                    pictureBox_namalsk.Image = Resources.red_namalsk;
+                    pictureBox_cherno1.Image = Resources.red_cherno;
+                    pictureBox_cherno2.Image = Resources.red_cherno;
+                    break;
             }
         }
 
@@ -262,6 +294,7 @@ namespace RMLauncher
 
             label_namalsk_online.Text = getInfo.GetOnlineServer(1);
             label_cherno1_online.Text = getInfo.GetOnlineServer(2);
+            label_cherno2_online.Text = getInfo.GetOnlineServer(3);
 
             label_statusOnline.Text = Convert.ToString(getInfo.OnlineAll(0));
         }
@@ -270,6 +303,7 @@ namespace RMLauncher
         {
             label_namalsk_ping.Text = Convert.ToString(getInfo.GetPingServer(1));
             label_cherno1_ping.Text = Convert.ToString(getInfo.GetPingServer(2));
+            label_cherno2_ping.Text = Convert.ToString(getInfo.GetPingServer(3));
         }
 
         async void UpdateStat()
@@ -300,7 +334,7 @@ namespace RMLauncher
             {
                 UpdateStat();
                 UpdateOnline();
-                //UpdatePing();
+                UpdatePing();
             }
             catch (Exception ex)
             {
