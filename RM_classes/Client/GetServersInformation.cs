@@ -2,6 +2,7 @@
 using RMLauncher.RM_Forms;
 using SteamQueryNet;
 using SteamQueryNet.Interfaces;
+using SteamQueryNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace RMLauncher.RM_classes
 {
     class GetServersInformation
     {
-        public string ip_namalsk = "185.189.255.184:27017"; //
-        public string ip_cherno = "185.189.255.184:27016"; //
-        public string ip_cherno3 = "185.189.255.184:27023";
+        public string ip_namalsk = "185.189.255.184:27017"; // 2402 или 27017
+        public string ip_cherno = "185.189.255.184:27016"; // 2302 или 27016
+        public string ip_cherno3 = "185.189.255.184:27023"; // 2602 или 27023
 
         IServerQuery serverQuery;
         SteamQueryNet.Models.ServerInfo serverInfo;

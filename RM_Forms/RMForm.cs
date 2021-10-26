@@ -61,6 +61,8 @@ namespace RMLauncher
             CheckBox_updates.Checked = Convert.ToBoolean(Settings.Default["updates"]);
             CheckBox_shutdown.Checked = Convert.ToBoolean(Settings.Default["shutdown"]);
             CheckBox_stats.Checked = Convert.ToBoolean(Settings.Default["stats"]);
+            InterfaceSize.Value = Convert.ToInt32(Settings.Default["size"]);
+            lbl_procentSize.Text = InterfaceSize.Value + "%";
             AutoStats();
         }
 
@@ -72,6 +74,7 @@ namespace RMLauncher
             Settings.Default["shutdown"] = CheckBox_shutdown.Checked;
             Settings.Default["stats"] = CheckBox_stats.Checked;
             Settings.Default["username"] = TextBox_username.Text;
+            Settings.Default["size"] = InterfaceSize.Value;
             Settings.Default.Save();
         }
 
@@ -90,9 +93,9 @@ namespace RMLauncher
             {
                 this.Invoke(new Action(() =>
                 {
-                    //UpdateStat();
-                    //UpdateOnline();
-                    //UpdatePing();
+                    UpdateStat();
+                    UpdateOnline();
+                    UpdatePing();
                 }));
             });
             updateThread.Start();
@@ -140,21 +143,60 @@ namespace RMLauncher
         public bool GameStart(byte serverID)
         {
             SaveSettings();
-            if (TextBox_username.Text.Length > 3 || TextBox_username.Text == "Survivor" || TextBox_username.Text == "Выживший")
+            DayZCheck:
+            if (!CheckOthersStats.DayZ())
             {
-                if (DayZLaunch.GameStart(serverID) == true)
+                steamOff:
+                if (CheckOthersStats.Steam())
                 {
-                    this.WindowState = FormWindowState.Minimized;
-                    Alert("Success game start", RMNotification.enmType.Success);
+                    if (TextBox_username.Text.Length > 3 || TextBox_username.Text == "Survivor" || TextBox_username.Text == "Выживший")
+                    {
+                        if (DayZLaunch.GameStart(serverID) == true)
+                        {
+                            this.WindowState = FormWindowState.Minimized;
+                            Alert("Success game start", RMNotification.enmType.Success);
 
-                    if (CheckBox_shutdown.Checked == true)
+                            if (CheckBox_shutdown.Checked == true)
+                                Application.Exit();
+
+                            return true;
+                        }
+                        else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
+                    }
+                    else { MetroMessageBox.Show(this, "Please change your nickname.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
+                } 
+                else 
+                {
+                    if (MetroMessageBox.Show(this, "Please start STEAM!", "Steam error", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.No)
+                    {
                         Application.Exit();
-
-                    return true;
+                        return false;
+                    }
+                    else
+                    {
+                        Thread.Sleep(1000);
+                        goto steamOff;
+                    }
                 }
-                else { MetroMessageBox.Show(this, "Game start error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
             }
-            else { MetroMessageBox.Show(this, "Please change your nickname.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return false; }
+            else 
+            { 
+                if (MetroMessageBox.Show(this, "DayZ is already running, do you want to close it?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        ProcessCustom.Kill("DayZ_BE");
+                        ProcessCustom.Kill("DayZ_x64");
+                        Thread.Sleep(1000);
+                        goto DayZCheck;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                } else { return false; }                
+            }
+            
         }
 
             #endregion
@@ -249,6 +291,8 @@ namespace RMLauncher
             CheckBox_shutdown.Style = metroColorStyle;
             CheckBox_stats.Style = metroColorStyle;
 
+            ContextMenu.Style = metroColorStyle;
+
             tile_beta.Style = metroColorStyle;
             TextBox_username.Style = metroColorStyle;
         }
@@ -260,28 +304,28 @@ namespace RMLauncher
                 case MetroColorStyle.Black:
                     {
                         pictureBox_namalsk.Image = Resources.black_namalsk;
-                        pictureBox_cherno1.Image = Resources.black_cherno;
-                        pictureBox_cherno2.Image = Resources.black_cherno;
+                        pictureBox_cherno1.Image = Resources.black_cherno1pp;
+                        pictureBox_cherno2.Image = Resources.black_cherno3pp;
                     }
                     break;
                 case MetroColorStyle.Green:
                     {
                         pictureBox_namalsk.Image = Resources.green_namalsk;
-                        pictureBox_cherno1.Image = Resources.green_cherno;
-                        pictureBox_cherno2.Image = Resources.green_cherno;
+                        pictureBox_cherno1.Image = Resources.green_cherno1pp;
+                        pictureBox_cherno2.Image = Resources.green_cherno3pp;
                     }
                     break;
                 case MetroColorStyle.Red:
                     {
                         pictureBox_namalsk.Image = Resources.red_namalsk;
-                        pictureBox_cherno1.Image = Resources.red_cherno;
-                        pictureBox_cherno2.Image = Resources.red_cherno;
+                        pictureBox_cherno1.Image = Resources.red_cherno1pp;
+                        pictureBox_cherno2.Image = Resources.red_cherno3pp;
                     }
                     break;
                 default:
                     pictureBox_namalsk.Image = Resources.red_namalsk;
-                    pictureBox_cherno1.Image = Resources.red_cherno;
-                    pictureBox_cherno2.Image = Resources.red_cherno;
+                    pictureBox_cherno1.Image = Resources.red_cherno1pp;
+                    pictureBox_cherno2.Image = Resources.red_cherno3pp;
                     break;
             }
         }
@@ -306,7 +350,14 @@ namespace RMLauncher
 
         async void UpdateStat()
         {
-            if (CheckOthersStats.DayZ()) label_statusDayZ.Text = "Active"; else label_statusDayZ.Text = "Offline";
+            if (CheckOthersStats.DayZ()) label_statusDayZ.Text = "Active";
+            else
+            {
+                label_statusDayZ.Text = "Offline";
+                Discord.Update();
+                Discord.MainMenu();
+            }
+
             if (CheckOthersStats.Steam()) label_statusSteam.Text = "Active";
             else
             {
@@ -412,7 +463,8 @@ namespace RMLauncher
 
         void tile_beta_Click(object sender, EventArgs e)
         {
-            Alert($"Application version: {ProductVersion}", RMNotification.enmType.Info);
+            Alert($"Opening beta testing.\n" +
+                  $"Application version: {ProductVersion}", RMNotification.enmType.Info);
         }
 
         void AutoStats()
@@ -476,6 +528,51 @@ namespace RMLauncher
         void RMForm_MaximumSizeChanged(object sender, EventArgs e)
         {
 
+        }
+
+        void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        void обновитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button_updateStat_Click(sender, e);
+        }
+
+        void настройкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tab.SelectedIndex = 1;
+        }
+
+        private void оРазработчикеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button_aboutRM_Click(sender, e);
+        }
+
+        private void перезагрузкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button_appRestart_Click(sender, e);
+        }
+
+        private void оРазработчикеToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            button_aboutDEV_Click(sender, e);
+        }
+
+        private void краснаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ComboBox_Style.SelectedIndex = 0;
+        }
+
+        private void зелёнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ComboBox_Style.SelectedIndex = 1;
+        }
+
+        private void чёрнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ComboBox_Style.SelectedIndex = 2;
         }
     }
 }

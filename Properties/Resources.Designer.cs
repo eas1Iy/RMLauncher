@@ -63,9 +63,19 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap black_cherno {
+        internal static System.Drawing.Bitmap black_cherno1pp {
             get {
-                object obj = ResourceManager.GetObject("black_cherno", resourceCulture);
+                object obj = ResourceManager.GetObject("black_cherno1pp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_cherno3pp {
+            get {
+                object obj = ResourceManager.GetObject("black_cherno3pp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +93,19 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap green_cherno {
+        internal static System.Drawing.Bitmap green_cherno1pp {
             get {
-                object obj = ResourceManager.GetObject("green_cherno", resourceCulture);
+                object obj = ResourceManager.GetObject("green_cherno1pp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_cherno3pp {
+            get {
+                object obj = ResourceManager.GetObject("green_cherno3pp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +143,19 @@ namespace RMLauncher.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap red_cherno {
+        internal static System.Drawing.Bitmap red_cherno1pp {
             get {
-                object obj = ResourceManager.GetObject("red_cherno", resourceCulture);
+                object obj = ResourceManager.GetObject("red_cherno1pp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_cherno3pp {
+            get {
+                object obj = ResourceManager.GetObject("red_cherno3pp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

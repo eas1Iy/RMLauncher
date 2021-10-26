@@ -2,7 +2,6 @@
 using RMLauncher.RM_classes.DayZ;
 using System;
 using System.Diagnostics;
-using System.Windows.Forms;
 
 namespace RMLauncher.RM_classes
 {
@@ -25,8 +24,8 @@ namespace RMLauncher.RM_classes
         public static string RM_chernoDZSA = $@"""-mod={_pathModsDZSA + "@CF"};{_pathModsDZSA + "@Russian Mafia"};{_pathModsDZSA + "@BuildAnywhere_v3"};{_pathModsDZSA + "@VPPAdminTools"};{_pathModsDZSA + "@Advanced Weapon Scopes"};{_pathModsDZSA + "@Ear-Plugs"};{_pathModsDZSA + "@Code Lock"};""";
 
         public static string ip = "185.189.255.184";
-        public static string port_namalsk = "2302";
-        public static string port_cherno = "2402";
+        public static string port_namalsk = "2402";
+        public static string port_cherno = "2302";
         public static string port_cherno3 = "2602";
 
         public static string _gameArgument;
@@ -40,65 +39,61 @@ namespace RMLauncher.RM_classes
         {
             if (DayZCheckMods.IsInstalledCheck(ID) == true)
             {
-                if (!CheckOthersStats.DayZ() && CheckOthersStats.Steam())
+                switch (ID)
                 {
-                    switch (ID)
-                    {
-                        case 1: // namalsk
+                    case 1: // namalsk
+                        {
+                            if (DayZCheckMods.IsDZSAModsCheck(1) == false)
                             {
-                                if(DayZCheckMods.IsDZSAModsCheck(1) == false)
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_namalsk} -window -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
-                                    else _gameArgument = $@"{RM_namalsk} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
-                                } 
-                                else
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_namalskDZSA} -window -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
-                                    else _gameArgument = $@"{RM_namalskDZSA} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
-                                }
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_namalsk} -window -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                                else _gameArgument = $@"{RM_namalsk} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                            }
+                            else
+                            {
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_namalskDZSA} -window -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                                else _gameArgument = $@"{RM_namalskDZSA} -skipIntro -noPause -connect={ip} -port={port_namalsk} -name={_username}";
+                            }
 
-                                if (GameLaunch() == true) { return true; } else return false;
-                            }
-                        case 2: // cherno 1pp
+                            if (GameLaunch() == true) { return true; } else return false;
+                        }
+                    case 2: // cherno 1pp
+                        {
+                            if (DayZCheckMods.IsDZSAModsCheck(2) == false)
                             {
-                                if (DayZCheckMods.IsDZSAModsCheck(2) == false)
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
-                                    else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
-                                }
-                                else
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_chernoDZSA} -window -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
-                                    else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
-                                }
-                                    
-                                if (GameLaunch() == true) { return true; } else return false;
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+                                else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
                             }
-                        case 3: // cherno 3pp
+                            else
                             {
-                                if (DayZCheckMods.IsDZSAModsCheck(2) == false)
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
-                                    else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
-                                }
-                                else
-                                {
-                                    if (IsWindow)
-                                        _gameArgument = $@"{RM_chernoDZSA} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
-                                    else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
-                                }
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_chernoDZSA} -window -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+                                else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno} -name={_username}";
+                            }
 
-                                if (GameLaunch() == true) { return true; } else return false;
+                            if (GameLaunch() == true) { return true; } else return false;
+                        }
+                    case 3: // cherno 3pp
+                        {
+                            if (DayZCheckMods.IsDZSAModsCheck(2) == false)
+                            {
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_cherno} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                else _gameArgument = $@"{RM_cherno} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
                             }
-                        default: return false;
-                    }
+                            else
+                            {
+                                if (IsWindow)
+                                    _gameArgument = $@"{RM_chernoDZSA} -window -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                                else _gameArgument = $@"{RM_chernoDZSA} -skipIntro -noPause -connect={ip} -port={port_cherno3} -name={_username}";
+                            }
+
+                            if (GameLaunch() == true) { return true; } else return false;
+                        }
+                    default: return false;
                 }
-                else { return false; }
             }
             else
             {
@@ -108,14 +103,14 @@ namespace RMLauncher.RM_classes
 
         public static bool GameLaunch()
         {
-            gameCheck:
+        gameCheck:
             if (!CheckOthersStats.DayZ())
             {
                 GameProcess = new Process();
                 GameProcess.StartInfo.FileName = _pathExe;
                 GameProcess.StartInfo.Arguments = _gameArgument;
 
-               // if (IsHight) GameProcess.PriorityClass = ProcessPriorityClass.High;
+                // if (IsHight) GameProcess.PriorityClass = ProcessPriorityClass.High;
 
                 GameProcess.StartInfo.Verb = "runas";
                 GameProcess.Start();
@@ -124,7 +119,7 @@ namespace RMLauncher.RM_classes
             else
             {
                 if (CheckOthersStats.ProcessExist("DayZ_BE.exe"))
-                ProcessCustom.Kill("DayZ_BE.exe");
+                    ProcessCustom.Kill("DayZ_BE.exe");
                 else if (CheckOthersStats.ProcessExist("DayZ_x64.exe"))
                     ProcessCustom.Kill("DayZ_x64.exe");
 

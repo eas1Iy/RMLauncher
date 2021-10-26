@@ -108,6 +108,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RM_classes\Client\CheckAvailable.cs" />
     <Compile Include="RM_classes\Client\CheckOthersStats.cs" />
     <Compile Include="RM_classes\DayZ\DayZCheckMods.cs" />
@@ -176,14 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RM_Forms\RMStart.ru.resx">
       <DependentUpon>RMStart.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,23 +213,20 @@
     <None Include="RM_others\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\namalsk.png" />
-    <None Include="Resources\cherno.png" />
-    <None Include="Resources\livonia.png" />
-    <None Include="Resources\KK22.png" />
-    <None Include="Resources\RMlogo_1.png" />
-    <None Include="Resources\red_namalsk.png" />
-    <None Include="Resources\red_cherno.png" />
-    <None Include="Resources\black_cherno.png" />
-    <None Include="Resources\black_namalsk.png" />
-    <None Include="Resources\green_cherno.png" />
-    <None Include="Resources\green_namalsk.png" />
     <None Include="Resources\image_help1.png" />
     <None Include="Resources\image_help2.png" />
+    <None Include="Resources\green_cherno1pp.png" />
+    <None Include="Resources\green_cherno3pp.png" />
+    <None Include="Resources\green_namalsk.png" />
+    <None Include="Resources\red_cherno1pp.png" />
+    <None Include="Resources\red_cherno3pp.png" />
+    <None Include="Resources\red_namalsk.png" />
+    <None Include="Resources\black_cherno1pp.png" />
+    <None Include="Resources\black_cherno3pp.png" />
+    <None Include="Resources\black_namalsk.png" />
     <Content Include="RMIcon_Red.ico" />
     <Content Include="RMIcon_White.ico" />
     <Content Include="steam_api64.dll" />
-    <None Include="Resources\logoWhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

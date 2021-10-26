@@ -829,7 +829,7 @@ namespace RMLauncher.RM_Forms
             // 
             this.pictureBox_cherno2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_cherno2.Image = global::RMLauncher.Properties.Resources.red_cherno;
+            this.pictureBox_cherno2.Image = global::RMLauncher.Properties.Resources.red_cherno3pp;
             this.pictureBox_cherno2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox_cherno2.Location = new System.Drawing.Point(10, 44);
             this.pictureBox_cherno2.Name = "pictureBox_cherno2";
@@ -1021,7 +1021,7 @@ namespace RMLauncher.RM_Forms
             // 
             this.pictureBox_cherno1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_cherno1.Image = global::RMLauncher.Properties.Resources.red_cherno;
+            this.pictureBox_cherno1.Image = global::RMLauncher.Properties.Resources.red_cherno1pp;
             this.pictureBox_cherno1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox_cherno1.Location = new System.Drawing.Point(10, 44);
             this.pictureBox_cherno1.Name = "pictureBox_cherno1";

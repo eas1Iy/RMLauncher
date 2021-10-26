@@ -48,10 +48,24 @@ namespace RMLauncher.RM_classes.Discord
 				Assets = new Assets()
 				{
 					LargeImageKey = "logowhite",
-					LargeImageText = $"Russian Mafia Launcher v{Application.ProductVersion}",
+					LargeImageText = $"Russian Mafia Launcher v{Application.ProductVersion}"
 					//SmallImageKey = "logowhite"
 				}
 			});
+		}
+
+		public void MainMenu()
+		{
+			this.client.SetPresence(new RichPresence
+			{
+				Details = "Main menu",
+				State = "Waiting...",
+				Assets = new Assets
+				{
+					LargeImageKey = "logowhite",
+					LargeImageText = $"Russian Mafia Launcher v{Application.ProductVersion}"
+				}
+			}); ;
 		}
 
 		public void JoinServer(string Name)
@@ -62,9 +76,10 @@ namespace RMLauncher.RM_classes.Discord
 				State = Name,
 				Assets = new Assets
 				{
-					LargeImageKey = "logowhite"
+					LargeImageKey = "logowhite",
+					LargeImageText = $"Russian Mafia Launcher v{Application.ProductVersion}"
 				}
-			});
+			}); ;
 		}
 
 		public void Update()

@@ -130,5 +130,17 @@ namespace RMLauncher.Properties {
                 this["stats"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int size {
+            get {
+                return ((int)(this["size"]));
+            }
+            set {
+                this["size"] = value;
+            }
+        }
     }
 }

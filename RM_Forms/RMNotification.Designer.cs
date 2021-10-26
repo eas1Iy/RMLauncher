@@ -30,6 +30,7 @@ namespace RMLauncher.RM_Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RMNotification));
             this.StyleExtender = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.lbl_Message = new MetroFramework.Controls.MetroLabel();
@@ -67,12 +68,15 @@ namespace RMLauncher.RM_Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 113);
             this.Controls.Add(this.lbl_Message);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RMNotification";
             this.Opacity = 0.6D;
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "Notification";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;

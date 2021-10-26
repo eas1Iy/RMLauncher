@@ -107,7 +107,7 @@ namespace RMLauncher.RM_Forms
 
         bool LauncherNeedCheck()
         {
-            if (CheckOthersStats.Steam() && !CheckOthersStats.DayZ()) // CheckAvailable.CheckConnectionAvailable()
+            if (CheckOthersStats.Steam()) // CheckAvailable.CheckConnectionAvailable()
                 return true;
             else return false;
         }
